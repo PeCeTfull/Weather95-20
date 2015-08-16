@@ -1,0 +1,1858 @@
+# Weather 95+20
+# Copyright (C) 2015 PeCeT_full
+# This file is distributed under the same license as the Weather95+20 package.
+# PeCeT_full <pecetfull@komputermania.pl.eu.org>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-03 23:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cppfiles/Weather95_20Main.cpp:477
+msgid "&12-hour clock"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:479
+msgid "&24-hour clock"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:509
+msgid "&ANSI"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:521
+msgid "&About...\tF1"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:471
+msgid "&Celsius"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:514
+msgid "&Change language"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:455
+msgid "&Check\tEnter"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:507
+msgid "&Date format"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:473
+msgid "&Fahrenheit"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:468
+msgid "&File"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:523
+msgid "&Help"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:519
+msgid "&Options"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:464
+msgid "&Save"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:517
+msgid "&Save settings"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:481
+msgid "&Time format"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:511
+msgid "&UTF-8"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:951
+msgid "). Last updated: "
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:668
+msgid ""
+".\n"
+"\n"
+"Current language: "
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:668
+msgid ""
+".\n"
+"Build date: "
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:353 cppfiles/Weather95_20Main.cpp:980
+msgid "3rd Day"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:387 cppfiles/Weather95_20Main.cpp:982
+msgid "4th Day"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:419 cppfiles/Weather95_20Main.cpp:984
+msgid "5th Day"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:668
+msgid ""
+"A weather forecast program for both vintage and modern PC workstations. "
+"Powered by Yahoo Weather API.\n"
+"This product includes software developed by the OpenSSL Project for use in "
+"the OpenSSL Toolkit (http://www.openssl.org/).\n"
+"\n"
+"Build info: "
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1276
+msgid ""
+"Another language has just been selected. To reflect all the changes, please "
+"save current settings and then restart the application."
+msgstr ""
+
+#: cppfiles/wxTranslationHelper.cpp:70
+msgid "Array of language names and identifiers should have the same size."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:458
+msgid "As &file...\tCtrl+S"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1040
+msgid "As of:"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:273
+msgid "Astronomy"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:257
+msgid "Atmosphere"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:602
+msgid "Blowing snow"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:610
+msgid "Blustery"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1064
+msgid "CONDITION"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1061
+msgid "CURRENT CONDITIONS"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:514
+msgid "Changes the user interface language."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:455
+msgid "Checks the weather in the city provided."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:957 cppfiles/Weather95_20Main.cpp:1067
+#, c-format
+msgid "Chill: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:249
+msgid "Chill: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1043
+#, c-format
+msgid "City: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:618
+msgid "Clear (night)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:613
+msgid "Cloudy"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:612
+msgid "Cold"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1093 cppfiles/Weather95_20Main.cpp:1100
+#: cppfiles/Weather95_20Main.cpp:1107 cppfiles/Weather95_20Main.cpp:1114
+#: cppfiles/Weather95_20Main.cpp:1121
+#, c-format
+msgid "Condition: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:461
+msgid "Copies the weather details to the system clipboard."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1030
+msgid ""
+"Could not find the location or any of its counterparts in Yahoo! Weather's "
+"database."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:806
+#, c-format
+msgid ""
+"Could not successfully establish the connection due to the following reason: "
+"%s."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1052
+#, c-format
+msgid "Country: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:223
+msgid "Current conditions"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:485
+msgid "DD-MM-YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:493
+msgid "DD.MM.YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:501
+msgid "DD/MM/YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:941
+msgid "DEC_FRACTION_DOT"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:951
+msgid "Data for: "
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:959 cppfiles/Weather95_20Main.cpp:1069
+#, c-format
+msgid "Direction: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:251
+msgid "Direction: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:596
+msgid "Drizzle"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:606
+msgid "Dust"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:466
+msgid "E&xit\tAlt+F4"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:806 cppfiles/Weather95_20Main.cpp:820
+#: cppfiles/Weather95_20Main.cpp:1027 cppfiles/Weather95_20Main.cpp:1030
+#: cppfiles/Weather95_20Main.cpp:1150
+msgid "Error"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:621
+msgid "Fair (day)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:620
+msgid "Fair (night)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:607
+msgid "Foggy"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:595
+msgid "Freezing drizzle"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:597
+msgid "Freezing rain"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:752
+msgid "Friday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:604
+msgid "Hail"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:608
+msgid "Haze"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:628 cppfiles/Weather95_20Main.cpp:630
+msgid "Heavy snow"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:623
+msgid "Hot"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:963 cppfiles/Weather95_20Main.cpp:1074
+#, c-format
+msgid "Humidity: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:263
+msgid "Humidity: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:589
+msgid "Hurricane"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:634
+msgid "Isolated thundershowers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:624
+msgid "Isolated thunderstorms"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1041
+msgid "LOCATION"
+msgstr ""
+
+#: cppfiles/wxTranslationHelper.cpp:71
+msgid "Language"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1057
+#, c-format
+msgid "Latitude: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:601
+msgid "Light snow showers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1297
+msgid "Location status"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:216
+msgid "Location:"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1059
+#, c-format
+msgid "Longitude: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:489
+msgid "MM-DD-YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:497
+msgid "MM.DD.YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:505
+msgid "MM/DD/YYYY"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:296 cppfiles/Weather95_20Main.cpp:328
+#: cppfiles/Weather95_20Main.cpp:360 cppfiles/Weather95_20Main.cpp:394
+#: cppfiles/Weather95_20Main.cpp:426
+msgid "Max. temperature:"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1089 cppfiles/Weather95_20Main.cpp:1096
+#: cppfiles/Weather95_20Main.cpp:1103 cppfiles/Weather95_20Main.cpp:1110
+#: cppfiles/Weather95_20Main.cpp:1117
+#, c-format
+msgid "Maximal temperature: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1276
+msgid "Message"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:307 cppfiles/Weather95_20Main.cpp:339
+#: cppfiles/Weather95_20Main.cpp:371 cppfiles/Weather95_20Main.cpp:405
+#: cppfiles/Weather95_20Main.cpp:437
+msgid "Min. temperature:"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1091 cppfiles/Weather95_20Main.cpp:1098
+#: cppfiles/Weather95_20Main.cpp:1105 cppfiles/Weather95_20Main.cpp:1112
+#: cppfiles/Weather95_20Main.cpp:1119
+#, c-format
+msgid "Minimal temperature: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:622
+msgid "Mixed rain and hail"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:593
+msgid "Mixed rain and sleet"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:592
+msgid "Mixed rain and snow"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:594
+msgid "Mixed snow and sleet"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:744
+msgid "Monday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:615
+msgid "Mostly cloudy (day)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:614
+msgid "Mostly cloudy (night)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:232 cppfiles/Weather95_20Main.cpp:298
+#: cppfiles/Weather95_20Main.cpp:309 cppfiles/Weather95_20Main.cpp:330
+#: cppfiles/Weather95_20Main.cpp:341 cppfiles/Weather95_20Main.cpp:362
+#: cppfiles/Weather95_20Main.cpp:373 cppfiles/Weather95_20Main.cpp:396
+#: cppfiles/Weather95_20Main.cpp:407 cppfiles/Weather95_20Main.cpp:428
+#: cppfiles/Weather95_20Main.cpp:439
+msgid "N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1027
+msgid ""
+"No data is currently available for the requested location. Please enter "
+"another location or try again later."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:635
+msgid "Not available"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:880
+msgid "PRESSURE_MB"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:631
+msgid "Partly cloudy"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:617
+msgid "Partly cloudy (day)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:616
+msgid "Partly cloudy (night)"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1055
+#, c-format
+msgid "Place: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.h:62
+msgid "Please type the location and hit Enter."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1039
+msgid "Powered by Yahoo!"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:967 cppfiles/Weather95_20Main.cpp:1078
+#, c-format
+msgid "Pressure: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:267
+msgid "Pressure: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:466
+msgid "Quits the application."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1047
+#, c-format
+msgid "Region: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:969 cppfiles/Weather95_20Main.cpp:1080
+#, c-format
+msgid "Rising: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:269
+msgid "Rising: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:754
+msgid "Saturday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1129
+msgid "Save as file..."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:517
+msgid "Saves current settings to the configuration file."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:458
+msgid "Saves the weather details to a specified file."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:627
+msgid "Scattered showers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:629
+msgid "Scattered snow showers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:625 cppfiles/Weather95_20Main.cpp:626
+msgid "Scattered thunderstorms"
+msgstr ""
+
+#: cppfiles/wxTranslationHelper.cpp:71
+msgid "Select your language."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:509
+msgid "Sets plain text details format to ANSI."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:511
+msgid "Sets plain text details format to Unicode (UTF-8)."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:485
+msgid "Sets the date format to DD-MM-YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:493
+msgid "Sets the date format to DD.MM.YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:501
+msgid "Sets the date format to DD/MM/YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:489
+msgid "Sets the date format to MM-DD-YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:497
+msgid "Sets the date format to MM.DD.YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:505
+msgid "Sets the date format to MM/DD/YYYY."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:487
+msgid "Sets the date format to YYYY-DD-MM."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:483
+msgid "Sets the date format to YYYY-MM-DD."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:495
+msgid "Sets the date format to YYYY.DD.MM."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:491
+msgid "Sets the date format to YYYY.MM.DD."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:503
+msgid "Sets the date format to YYYY/DD/MM."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:499
+msgid "Sets the date format to YYYY/MM/DD."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:471
+msgid ""
+"Sets the temperature unit to Celsius along with distance (km), pressure (mb) "
+"and wind speed (kph)."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:473
+msgid ""
+"Sets the temperature unit to Fahrenheit along with distance (mi), pressure "
+"(in) and wind speed (mph)."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:477
+msgid "Sets the time format to 12-hour (AM/PM)."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:479
+msgid "Sets the time format to 24-hour."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:590
+msgid "Severe thunderstorms"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:598 cppfiles/Weather95_20Main.cpp:599
+msgid "Showers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:521
+msgid "Shows info about this application."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:605
+msgid "Sleet"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:609
+msgid "Smoky"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:603
+msgid "Snow"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:600
+msgid "Snow flurries"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:633
+msgid "Snow showers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:961 cppfiles/Weather95_20Main.cpp:1071
+#, c-format
+msgid "Speed: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:253
+msgid "Speed: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:756
+msgid "Sunday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:619
+msgid "Sunny"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:971 cppfiles/Weather95_20Main.cpp:1083
+#, c-format
+msgid "Sunrise: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:279
+msgid "Sunrise: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:973 cppfiles/Weather95_20Main.cpp:1085
+#, c-format
+msgid "Sunset: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:281
+msgid "Sunset: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:513
+msgid "Target file &encoding"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:226
+msgid "Temperature"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:475
+msgid "Temperature &unit"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1129
+msgid "Text documents (*.txt)|*.txt|All files (*.*)|*.*"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1150
+msgid ""
+"The file has not been successfully written because diacritics of the "
+"currently used language in this program are not compatible with the encoding "
+"of the system language. Change the language to another one (the safest one "
+"is English) or set target encoding to UTF-8."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:820
+msgid ""
+"The target data document is not well-formed. Enter another search phrase or "
+"try again later."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:670
+msgid ""
+"This program is published under The MIT License. For more information, "
+"please refer to the Licence.txt file included with the application.\n"
+"\n"
+"This program also includes libraries that are necessary to launch the "
+"software. The licensing information regarding those are located in the "
+"Licences directory."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:632
+msgid "Thundershowers"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:591
+msgid "Thunderstorms"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:750
+msgid "Thursday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:461
+msgid "To &Clipboard\tCtrl+Alt+C"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:289 cppfiles/Weather95_20Main.cpp:976
+msgid "Today"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:321 cppfiles/Weather95_20Main.cpp:978
+msgid "Tomorrow"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:587
+msgid "Tornado"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:588
+msgid "Tropical storm"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:746
+msgid "Tuesday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:758
+msgid "Unknown"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:738
+msgid "Unknown date format"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:965 cppfiles/Weather95_20Main.cpp:1076
+#, c-format
+msgid "Visibility: %s"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:265
+msgid "Visibility: N/A"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1038
+msgid "WEATHER DETAILS"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:1087
+msgid "WEATHER FORECAST"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:780
+msgid "Warning"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:211 cppfiles/Weather95_20Main.cpp:665
+msgid "Weather 95+20"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:239 cppfiles/Weather95_20Main.cpp:317
+#: cppfiles/Weather95_20Main.cpp:349 cppfiles/Weather95_20Main.cpp:381
+#: cppfiles/Weather95_20Main.cpp:415 cppfiles/Weather95_20Main.cpp:447
+msgid "Weather condition"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:286
+msgid "Weather forecast"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:748
+msgid "Wednesday"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:243
+msgid "Wind"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:611
+msgid "Windy"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:487
+msgid "YYYY-DD-MM"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:483
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:495
+msgid "YYYY.DD.MM"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:491
+msgid "YYYY.MM.DD"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:503
+msgid "YYYY/DD/MM"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:499
+msgid "YYYY/MM/DD"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:780
+msgid "You need to enter the desired location in order to proceed."
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:895
+msgid "falling"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:669
+msgid "http://www.komputermania.pl.eu.org"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:897
+msgid "rising"
+msgstr ""
+
+#: cppfiles/Weather95_20Main.cpp:899
+msgid "steady"
+msgstr ""
+
+#: OK
+msgid "&OK"
+msgstr ""
+
+#: Cancel
+msgid "&Cancel"
+msgstr ""
+
+#: About
+msgid "About "
+msgstr ""
+
+#: License
+msgid "License"
+msgstr ""
+
+#: English
+msgid "English"
+msgstr ""
+
+#: English (Canada)
+msgid "English (Canada)"
+msgstr ""
+
+#: Polish
+msgid "Polish"
+msgstr ""
+
+#: German
+msgid "German"
+msgstr ""
+
+#: Earth
+msgid "Earth"
+msgstr ""
+
+#: Afghanistan
+msgid "Afghanistan"
+msgstr ""
+
+#: Albania
+msgid "Albania"
+msgstr ""
+
+#: Algeria
+msgid "Algeria"
+msgstr ""
+
+#: American Samoa
+msgid "American Samoa"
+msgstr ""
+
+#: Andorra
+msgid "Andorra"
+msgstr ""
+
+#: Angola
+msgid "Angola"
+msgstr ""
+
+#: Anguilla
+msgid "Anguilla"
+msgstr ""
+
+#: Antarctica
+msgid "Antarctica"
+msgstr ""
+
+#: Antigua and Barbuda
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: Argentina
+msgid "Argentina"
+msgstr ""
+
+#: Armenia
+msgid "Armenia"
+msgstr ""
+
+#: Aruba
+msgid "Aruba"
+msgstr ""
+
+#: Australia
+msgid "Australia"
+msgstr ""
+
+#: Austria
+msgid "Austria"
+msgstr ""
+
+#: Azerbaijan
+msgid "Azerbaijan"
+msgstr ""
+
+#: Bahamas
+msgid "Bahamas"
+msgstr ""
+
+#: Bahrain
+msgid "Bahrain"
+msgstr ""
+
+#: Bangladesh
+msgid "Bangladesh"
+msgstr ""
+
+#: Barbados
+msgid "Barbados"
+msgstr ""
+
+#: Belarus
+msgid "Belarus"
+msgstr ""
+
+#: Belgium
+msgid "Belgium"
+msgstr ""
+
+#: Belize
+msgid "Belize"
+msgstr ""
+
+#: Benin
+msgid "Benin"
+msgstr ""
+
+#: Bermuda
+msgid "Bermuda"
+msgstr ""
+
+#: Bhutan
+msgid "Bhutan"
+msgstr ""
+
+#: Bolivia
+msgid "Bolivia"
+msgstr ""
+
+#: Bosnia and Herzegovina
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: Botswana
+msgid "Botswana"
+msgstr ""
+
+#: Bouvet Island
+msgid "Bouvet Island"
+msgstr ""
+
+#: Brazil
+msgid "Brazil"
+msgstr ""
+
+#: British Indian Ocean Territory
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: British Virgin Islands
+msgid "British Virgin Islands"
+msgstr ""
+
+#: Brunei Darussalam
+msgid "Brunei Darussalam"
+msgstr ""
+
+#: Bulgaria
+msgid "Bulgaria"
+msgstr ""
+
+#: Burkina Faso
+msgid "Burkina Faso"
+msgstr ""
+
+#: Burundi
+msgid "Burundi"
+msgstr ""
+
+#: Cambodia
+msgid "Cambodia"
+msgstr ""
+
+#: Cameroon
+msgid "Cameroon"
+msgstr ""
+
+#: Canada
+msgid "Canada"
+msgstr ""
+
+#: Cape Verde
+msgid "Cape Verde"
+msgstr ""
+
+#: Cayman Islands
+msgid "Cayman Islands"
+msgstr ""
+
+#: Central African Republic
+msgid "Central African Republic"
+msgstr ""
+
+#: Chad
+msgid "Chad"
+msgstr ""
+
+#: Chile
+msgid "Chile"
+msgstr ""
+
+#: China
+msgid "China"
+msgstr ""
+
+#: Christmas Island
+msgid "Christmas Island"
+msgstr ""
+
+#: Cocos (Keeling) Islands
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: Colombia
+msgid "Colombia"
+msgstr ""
+
+#: Comoros
+msgid "Comoros"
+msgstr ""
+
+#: Congo
+msgid "Congo"
+msgstr ""
+
+#: Cook Islands
+msgid "Cook Islands"
+msgstr ""
+
+#: Costa Rica
+msgid "Costa Rica"
+msgstr ""
+
+#: Côte d´Ivoire
+msgid "Côte d´Ivoire"
+msgstr ""
+
+#: Croatia
+msgid "Croatia"
+msgstr ""
+
+#: Cuba
+msgid "Cuba"
+msgstr ""
+
+#: Cyprus
+msgid "Cyprus"
+msgstr ""
+
+#: Czech Republic
+msgid "Czech Republic"
+msgstr ""
+
+#: Democratic Republic of Congo
+msgid "Democratic Republic of Congo"
+msgstr ""
+
+#: Denmark
+msgid "Denmark"
+msgstr ""
+
+#: Djibouti
+msgid "Djibouti"
+msgstr ""
+
+#: Dominica
+msgid "Dominica"
+msgstr ""
+
+#: Dominican Republic
+msgid "Dominican Republic"
+msgstr ""
+
+#: Ecuador
+msgid "Ecuador"
+msgstr ""
+
+#: Egypt
+msgid "Egypt"
+msgstr ""
+
+#: El Salvador
+msgid "El Salvador"
+msgstr ""
+
+#: Equatorial Guinea
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: Eritrea
+msgid "Eritrea"
+msgstr ""
+
+#: Estonia
+msgid "Estonia"
+msgstr ""
+
+#: Ethiopia
+msgid "Ethiopia"
+msgstr ""
+
+#: Falkland Islands
+msgid "Falkland Islands"
+msgstr ""
+
+#: Faroe Islands
+msgid "Faroe Islands"
+msgstr ""
+
+#: Federated States of Micronesia
+msgid "Federated States of Micronesia"
+msgstr ""
+
+#: Fiji
+msgid "Fiji"
+msgstr ""
+
+#: Finland
+msgid "Finland"
+msgstr ""
+
+#: France
+msgid "France"
+msgstr ""
+
+#: French Guiana
+msgid "French Guiana"
+msgstr ""
+
+#: French Polynesia
+msgid "French Polynesia"
+msgstr ""
+
+#: French Southern Territories
+msgid "French Southern Territories"
+msgstr ""
+
+#: Gabon
+msgid "Gabon"
+msgstr ""
+
+#: Gambia
+msgid "Gambia"
+msgstr ""
+
+#: Georgia
+msgid "Georgia"
+msgstr ""
+
+#: Germany
+msgid "Germany"
+msgstr ""
+
+#: Ghana
+msgid "Ghana"
+msgstr ""
+
+#: Gibraltar
+msgid "Gibraltar"
+msgstr ""
+
+#: Greece
+msgid "Greece"
+msgstr ""
+
+#: Greenland
+msgid "Greenland"
+msgstr ""
+
+#: Grenada
+msgid "Grenada"
+msgstr ""
+
+#: Guadeloupe
+msgid "Guadeloupe"
+msgstr ""
+
+#: Guam
+msgid "Guam"
+msgstr ""
+
+#: Guatemala
+msgid "Guatemala"
+msgstr ""
+
+#: Guinea
+msgid "Guinea"
+msgstr ""
+
+#: Guinea-Bissau
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: Guyana
+msgid "Guyana"
+msgstr ""
+
+#: Haiti
+msgid "Haiti"
+msgstr ""
+
+#: Heard Island and McDonald Islands
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+#: Honduras
+msgid "Honduras"
+msgstr ""
+
+#: Hong Kong
+msgid "Hong Kong"
+msgstr ""
+
+#: Hungary
+msgid "Hungary"
+msgstr ""
+
+#: Iceland
+msgid "Iceland"
+msgstr ""
+
+#: India
+msgid "India"
+msgstr ""
+
+#: Indonesia
+msgid "Indonesia"
+msgstr ""
+
+#: Iran
+msgid "Iran"
+msgstr ""
+
+#: Iraq
+msgid "Iraq"
+msgstr ""
+
+#: Ireland
+msgid "Ireland"
+msgstr ""
+
+#: Israel
+msgid "Israel"
+msgstr ""
+
+#: Italy
+msgid "Italy"
+msgstr ""
+
+#: Jamaica
+msgid "Jamaica"
+msgstr ""
+
+#: Japan
+msgid "Japan"
+msgstr ""
+
+#: Jordan
+msgid "Jordan"
+msgstr ""
+
+#: Kazakhstan
+msgid "Kazakhstan"
+msgstr ""
+
+#: Kenya
+msgid "Kenya"
+msgstr ""
+
+#: Kiribati
+msgid "Kiribati"
+msgstr ""
+
+#: Kuwait
+msgid "Kuwait"
+msgstr ""
+
+#: Kyrgyzstan
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: Laos
+msgid "Laos"
+msgstr ""
+
+#: Latvia
+msgid "Latvia"
+msgstr ""
+
+#: Lebanon
+msgid "Lebanon"
+msgstr ""
+
+#: Lesotho
+msgid "Lesotho"
+msgstr ""
+
+#: Liberia
+msgid "Liberia"
+msgstr ""
+
+#: Libya
+msgid "Libya"
+msgstr ""
+
+#: Liechtenstein
+msgid "Liechtenstein"
+msgstr ""
+
+#: Lithuania
+msgid "Lithuania"
+msgstr ""
+
+#: Luxembourg
+msgid "Luxembourg"
+msgstr ""
+
+#: Macao
+msgid "Macao"
+msgstr ""
+
+#: Macedonia
+msgid "Macedonia"
+msgstr ""
+
+#: Madagascar
+msgid "Madagascar"
+msgstr ""
+
+#: Malawi
+msgid "Malawi"
+msgstr ""
+
+#: Malaysia
+msgid "Malaysia"
+msgstr ""
+
+#: Maldives
+msgid "Maldives"
+msgstr ""
+
+#: Mali
+msgid "Mali"
+msgstr ""
+
+#: Malta
+msgid "Malta"
+msgstr ""
+
+#: Marshall Islands
+msgid "Marshall Islands"
+msgstr ""
+
+#: Martinique
+msgid "Martinique"
+msgstr ""
+
+#: Mauritania
+msgid "Mauritania"
+msgstr ""
+
+#: Mauritius
+msgid "Mauritius"
+msgstr ""
+
+#: Mayotte
+msgid "Mayotte"
+msgstr ""
+
+#: Mexico
+msgid "Mexico"
+msgstr ""
+
+#: Moldova
+msgid "Moldova"
+msgstr ""
+
+#: Monaco
+msgid "Monaco"
+msgstr ""
+
+#: Mongolia
+msgid "Mongolia"
+msgstr ""
+
+#: Montenegro
+msgid "Montenegro"
+msgstr ""
+
+#: Montserrat
+msgid "Montserrat"
+msgstr ""
+
+#: Morocco
+msgid "Morocco"
+msgstr ""
+
+#: Mozambique
+msgid "Mozambique"
+msgstr ""
+
+#: Myanmar
+msgid "Myanmar"
+msgstr ""
+
+#: Namibia
+msgid "Namibia"
+msgstr ""
+
+#: Nauru
+msgid "Nauru"
+msgstr ""
+
+#: Nepal
+msgid "Nepal"
+msgstr ""
+
+#: Netherlands
+msgid "Netherlands"
+msgstr ""
+
+#: Netherlands Antilles
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: New Caledonia
+msgid "New Caledonia"
+msgstr ""
+
+#: New Zealand
+msgid "New Zealand"
+msgstr ""
+
+#: Nicaragua
+msgid "Nicaragua"
+msgstr ""
+
+#: Niger
+msgid "Niger"
+msgstr ""
+
+#: Nigeria
+msgid "Nigeria"
+msgstr ""
+
+#: Niue
+msgid "Niue"
+msgstr ""
+
+#: Norfolk Island
+msgid "Norfolk Island"
+msgstr ""
+
+#: North Korea
+msgid "North Korea"
+msgstr ""
+
+#: Northern Mariana Islands
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: Norway
+msgid "Norway"
+msgstr ""
+
+#: Oman
+msgid "Oman"
+msgstr ""
+
+#: Pakistan
+msgid "Pakistan"
+msgstr ""
+
+#: Palau
+msgid "Palau"
+msgstr ""
+
+#: Palestine
+msgid "Palestine"
+msgstr ""
+
+#: Panama
+msgid "Panama"
+msgstr ""
+
+#: Papua New Guinea
+msgid "Papua New Guinea"
+msgstr ""
+
+#: Paraguay
+msgid "Paraguay"
+msgstr ""
+
+#: Peru
+msgid "Peru"
+msgstr ""
+
+#: Philippines
+msgid "Philippines"
+msgstr ""
+
+#: Pitcairn
+msgid "Pitcairn"
+msgstr ""
+
+#: Poland
+msgid "Poland"
+msgstr ""
+
+#: Portugal
+msgid "Portugal"
+msgstr ""
+
+#: Puerto Rico
+msgid "Puerto Rico"
+msgstr ""
+
+#: Qatar
+msgid "Qatar"
+msgstr ""
+
+#: Reunion
+msgid "Reunion"
+msgstr ""
+
+#: Romania
+msgid "Romania"
+msgstr ""
+
+#: Russia
+msgid "Russia"
+msgstr ""
+
+#: Rwanda
+msgid "Rwanda"
+msgstr ""
+
+#: Saint Kitts and Nevis
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: Saint Pierre and Miquelon
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: Saint Vincent and the Grenadines
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: Samoa
+msgid "Samoa"
+msgstr ""
+
+#: San Marino
+msgid "San Marino"
+msgstr ""
+
+#: Sao Tome and Principe
+msgid "Sao Tome and Principe"
+msgstr ""
+
+#: Saudi Arabia
+msgid "Saudi Arabia"
+msgstr ""
+
+#: Senegal
+msgid "Senegal"
+msgstr ""
+
+#: Serbia
+msgid "Serbia"
+msgstr ""
+
+#: Seychelles
+msgid "Seychelles"
+msgstr ""
+
+#: Sierra Leone
+msgid "Sierra Leone"
+msgstr ""
+
+#: Singapore
+msgid "Singapore"
+msgstr ""
+
+#: Slovakia
+msgid "Slovakia"
+msgstr ""
+
+#: Slovenia
+msgid "Slovenia"
+msgstr ""
+
+#: Solomon Islands
+msgid "Solomon Islands"
+msgstr ""
+
+#: Somalia
+msgid "Somalia"
+msgstr ""
+
+#: South Africa
+msgid "South Africa"
+msgstr ""
+
+#: South Georgia and the South Sandwich Islands
+msgid "South Georgia and the South Sandwich Islands"
+msgstr ""
+
+#: South Korea
+msgid "South Korea"
+msgstr ""
+
+#: Spain
+msgid "Spain"
+msgstr ""
+
+#: Sri Lanka
+msgid "Sri Lanka"
+msgstr ""
+
+#: St Helena Ascension and Tristan da Cunha
+msgid "St Helena Ascension and Tristan da Cunha"
+msgstr ""
+
+#: St. Lucia
+msgid "St. Lucia"
+msgstr ""
+
+#: Sudan
+msgid "Sudan"
+msgstr ""
+
+#: Suriname
+msgid "Suriname"
+msgstr ""
+
+#: Svalbard and Jan Mayen
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: Swaziland
+msgid "Swaziland"
+msgstr ""
+
+#: Sweden
+msgid "Sweden"
+msgstr ""
+
+#: Switzerland
+msgid "Switzerland"
+msgstr ""
+
+#: Syria
+msgid "Syria"
+msgstr ""
+
+#: Taiwan
+msgid "Taiwan"
+msgstr ""
+
+#: Tajikistan
+msgid "Tajikistan"
+msgstr ""
+
+#: Tanzania
+msgid "Tanzania"
+msgstr ""
+
+#: Thailand
+msgid "Thailand"
+msgstr ""
+
+#: Timor-Leste
+msgid "Timor-Leste"
+msgstr ""
+
+#: Togo
+msgid "Togo"
+msgstr ""
+
+#: Tokelau
+msgid "Tokelau"
+msgstr ""
+
+#: Tonga
+msgid "Tonga"
+msgstr ""
+
+#: Trinidad and Tobago
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: Tunisia
+msgid "Tunisia"
+msgstr ""
+
+#: Turkey
+msgid "Turkey"
+msgstr ""
+
+#: Turkmenistan
+msgid "Turkmenistan"
+msgstr ""
+
+#: Turks and Caicos Islands
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: Tuvalu
+msgid "Tuvalu"
+msgstr ""
+
+#: Uganda
+msgid "Uganda"
+msgstr ""
+
+#: Ukraine
+msgid "Ukraine"
+msgstr ""
+
+#: United Arab Emirates
+msgid "United Arab Emirates"
+msgstr ""
+
+#: United Kingdom
+msgid "United Kingdom"
+msgstr ""
+
+#: United States
+msgid "United States"
+msgstr ""
+
+#: United States Minor Outlying Islands
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+#: Uruguay
+msgid "Uruguay"
+msgstr ""
+
+#: US Virgin Islands
+msgid "US Virgin Islands"
+msgstr ""
+
+#: Uzbekistan
+msgid "Uzbekistan"
+msgstr ""
+
+#: Vanuatu
+msgid "Vanuatu"
+msgstr ""
+
+#: Vatican City
+msgid "Vatican City"
+msgstr ""
+
+#: Venezuela
+msgid "Venezuela"
+msgstr ""
+
+#: Vietnam
+msgid "Vietnam"
+msgstr ""
+
+#: Wallis and Futuna
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: Western Sahara
+msgid "Western Sahara"
+msgstr ""
+
+#: Yemen
+msgid "Yemen"
+msgstr ""
+
+#: Zambia
+msgid "Zambia"
+msgstr ""
+
+#: Zimbabwe
+msgid "Zimbabwe"
+msgstr ""

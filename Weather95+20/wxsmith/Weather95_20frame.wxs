@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="Weather95_20Frame">
+		<title>Weather 95+20</title>
+		<centered>1</centered>
+		<bg>wxSYS_COLOUR_BTNFACE</bg>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_DIALOG_STYLE|wxMINIMIZE_BOX</style>
+		<handler function="OnKeyUpAndDown" entry="EVT_KEY_DOWN" />
+		<handler function="OnKeyUpAndDown" entry="EVT_KEY_UP" />
+		<handler function="OnSetAndKillFocus" entry="EVT_SET_FOCUS" />
+		<handler function="OnSetAndKillFocus" entry="EVT_KILL_FOCUS" />
+		<handler function="OnMouseMove" entry="EVT_MOTION" />
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>4</rows>
+			<object class="sizeritem">
+				<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+					<cols>3</cols>
+					<rows>1</rows>
+					<growablecols>1</growablecols>
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_LOCATIONSTATICTEXT" variable="LocationStaticText" member="yes">
+							<label>Location:</label>
+						</object>
+						<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxTextCtrl" name="ID_LOCATIONTEXTCTRL" variable="LocationTextCtrl" member="yes">
+							<size>-1,-1</size>
+						</object>
+						<flag>wxALL|wxEXPAND|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxPanel" name="ID_LOGOPANEL" variable="LogoPanel" member="yes">
+							<size>126,21</size>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="CurrentConditionsStaticBoxSizer" member="no">
+					<label>Current conditions</label>
+					<object class="sizeritem">
+						<object class="wxFlexGridSizer" variable="FlexGridSizer19" member="no">
+							<cols>4</cols>
+							<rows>1</rows>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer23" member="no">
+									<cols>1</cols>
+									<rows>3</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_TEMPERATURESTATICTEXT" variable="TemperatureStaticText" member="yes">
+											<label>Temperature</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_CURRENTTEMPERATURESTATICTEXT" variable="CurrentTemperatureStaticText" member="yes">
+											<label>N/A</label>
+											<font>
+												<size>37</size>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_CURRENTWEATHERCONDITIONSTATICTEXT" variable="CurrentWeatherConditionStaticText" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer20" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WINDSTATICTEXT" variable="WindStaticText" member="yes">
+											<label>Wind</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_CHILLSTATICTEXT" variable="ChillStaticText" member="yes">
+											<label>Chill: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_DIRECTIONSTATICTEXT" variable="DirectionStaticText" member="yes">
+											<label>Direction: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_SPEEDSTATICTEXT" variable="SpeedStaticText" member="yes">
+											<label>Speed: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer21" member="no">
+									<cols>1</cols>
+									<rows>5</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_ATMOSPHERESTATICTEXT" variable="AtmosphereStaticText" member="yes">
+											<label>Atmosphere</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_HUMIDITYSTATICTEXT" variable="HumidityStaticText" member="yes">
+											<label>Humidity: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_VISIBILITYSTATICTEXT" variable="VisibilityStaticText" member="yes">
+											<label>Visibility: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_PRESSURESTATICTEXT" variable="PressureStaticText" member="yes">
+											<label>Pressure: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_RISINGSTATICTEXT" variable="RisingStaticText" member="yes">
+											<label>Rising: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer22" member="no">
+									<cols>1</cols>
+									<rows>3</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_ASTRONOMYSTATICTEXT" variable="AstronomyStaticText" member="yes">
+											<label>Astronomy</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_SUNRISESTATICTEXT" variable="SunriseStaticText" member="yes">
+											<label>Sunrise: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_SUNSETSTATICTEXT" variable="SunsetStaticText" member="yes">
+											<label>Sunset: N/A</label>
+										</object>
+										<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="WeatherForecastStaticBoxSizer" member="no">
+					<label>Weather forecast</label>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+							<cols>3</cols>
+							<rows>1</rows>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer4" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_TODAYSTATICTEXT" variable="TodayStaticText" member="yes">
+											<label>Today</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer9" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MAXTEMPSTATICTEXT1" variable="MaxTempStaticText1" member="yes">
+													<label>Max. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMAXTEMPSTATICTEXT1" variable="CurrentMaxTempStaticText1" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer10" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MINTEMPSTATICTEXT1" variable="MinTempStaticText1" member="yes">
+													<label>Min. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMINTEMPSTATICTEXT1" variable="CurrentMinTempStaticText1" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WEATHERCONDITIONSTATICTEXT1" variable="WeatherConditionStaticText1" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer5" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_TOMORROWSTATICTEXT" variable="TomorrowStaticText" member="yes">
+											<label>Tomorrow</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer11" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="IID_MAXTEMPSTATICTEXT2" variable="MaxTempStaticText2" member="yes">
+													<label>Max. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMAXTEMPSTATICTEXT2" variable="CurrentMaxTempStaticText2" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer12" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MINTEMPSTATICTEXT2" variable="MinTempStaticText2" member="yes">
+													<label>Min. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMINTEMPSTATICTEXT2" variable="CurrentMinTempStaticText2" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WEATHERCONDITIONSTATICTEXT2" variable="WeatherConditionStaticText2" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer6" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_THIRDDAYSTATICTEXT" variable="ThirdDayStaticText" member="yes">
+											<label>3rd Day</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer13" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MAXTEMPSTATICTEXT3" variable="MaxTempStaticText3" member="yes">
+													<label>Max. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMAXTEMPSTATICTEXT3" variable="CurrentMaxTempStaticText3" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer14" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MINTEMPSTATICTEXT3" variable="MinTempStaticText3" member="yes">
+													<label>Min. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMINTEMPSTATICTEXT3" variable="CurrentMinTempStaticText3" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WEATHERCONDITIONSTATICTEXT3" variable="WeatherConditionStaticText3" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxFlexGridSizer" variable="FlexGridSizer24" member="no">
+							<cols>2</cols>
+							<rows>1</rows>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer7" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_FOURTHDAYSTATICTEXT" variable="FourthDayStaticText" member="yes">
+											<label>4th Day</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer15" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MAXTEMPSTATICTEXT4" variable="MaxTempStaticText4" member="yes">
+													<label>Max. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMAXTEMPSTATICTEXT4" variable="CurrentMaxTempStaticText4" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer16" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MINTEMPSTATICTEXT4" variable="MinTempStaticText4" member="yes">
+													<label>Min. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMINTEMPSTATICTEXT4" variable="CurrentMinTempStaticText4" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WEATHERCONDITIONSTATICTEXT4" variable="WeatherConditionStaticText4" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxFlexGridSizer" variable="FlexGridSizer8" member="no">
+									<cols>1</cols>
+									<rows>4</rows>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_FIFTHTHDAYSTATICTEXT" variable="FifthDayStaticText" member="yes">
+											<label>5th Day</label>
+											<font>
+												<weight>bold</weight>
+												<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+											</font>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer17" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MAXTEMPSTATICTEXT5" variable="MaxTempStaticText5" member="yes">
+													<label>Max. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMAXTEMPSTATICTEXT5" variable="CurrentMaxTempStaticText5" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxFlexGridSizer" variable="FlexGridSizer18" member="no">
+											<cols>2</cols>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_MINTEMPSTATICTEXT5" variable="MinTempStaticText5" member="yes">
+													<label>Min. temperature:</label>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" name="ID_CURRENTMINTEMPSTATICTEXT5" variable="CurrentMinTempStaticText5" member="yes">
+													<label>N/A</label>
+													<font>
+														<size>12</size>
+														<weight>bold</weight>
+														<sysfont>wxSYS_DEFAULT_GUI_FONT</sysfont>
+													</font>
+												</object>
+												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+												<border>5</border>
+												<option>1</option>
+											</object>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_WEATHERCONDITIONSTATICTEXT5" variable="WeatherConditionStaticText5" member="yes">
+											<label>Weather condition</label>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuCheck" variable="MenuItem3" member="yes">
+					<label>&amp;Check</label>
+					<accel>Enter</accel>
+					<help>Checks the weather in the city provided.</help>
+				</object>
+				<object class="wxMenu" name="idMenuSave" variable="MenuItem7" member="yes">
+					<label>&amp;Save</label>
+					<object class="wxMenuItem" name="idMenuAsFile" variable="MenuItem8" member="yes">
+						<label>As &amp;file...</label>
+						<accel>Ctrl+S</accel>
+						<help>Saves the weather details to a specified file.</help>
+						<enabled>0</enabled>
+					</object>
+					<object class="wxMenuItem" name="idMenuToClipboard" variable="MenuItem9" member="yes">
+						<label>To &amp;Clipboard</label>
+						<accel>Ctrl+Alt+C</accel>
+						<help>Copies the weather details to the system clipboard.</help>
+						<enabled>0</enabled>
+					</object>
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>E&amp;xit</label>
+					<accel>Alt+F4</accel>
+					<help>Quits the application.</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu3" member="yes">
+				<label>&amp;Options</label>
+				<object class="wxMenu" name="idMenuTemperatureUnit" variable="MenuItem4" member="yes">
+					<label>Temperature &amp;unit</label>
+					<object class="wxMenuItem" name="idMenuCelsius" variable="MenuItem5" member="yes">
+						<label>&amp;Celsius</label>
+						<help>Sets the temperature unit to Celsius along with distance (km), pressure (mb) and wind speed (kph).</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuFahrenheit" variable="MenuItem6" member="yes">
+						<label>&amp;Fahrenheit</label>
+						<help>Sets the temperature unit to Fahrenheit along with distance (mi), pressure (in) and wind speed (mph).</help>
+						<radio>1</radio>
+					</object>
+				</object>
+				<object class="wxMenu" name="idMenuTimeFormat" variable="MenuItem15" member="yes">
+					<label>&amp;Time format</label>
+					<object class="wxMenuItem" name="idMenu12HourClock" variable="MenuItem16" member="yes">
+						<label>&amp;12-hour clock</label>
+						<help>Sets the time format to 12-hour (AM/PM).</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenu24HourClock" variable="MenuItem17" member="yes">
+						<label>&amp;24-hour clock</label>
+						<help>Sets the time format to 24-hour.</help>
+						<radio>1</radio>
+					</object>
+				</object>
+				<object class="wxMenu" name="idMenuDateFormat" variable="MenuItem18" member="yes">
+					<label>&amp;Date format</label>
+					<object class="wxMenuItem" name="idMenuYearHyphenMonthHyphenDay" variable="MenuItem19" member="yes">
+						<label>YYYY-MM-DD</label>
+						<help>Sets the date format to YYYY-MM-DD.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuDayHyphenMonthHyphenYear" variable="MenuItem20" member="yes">
+						<label>DD-MM-YYYY</label>
+						<help>Sets the date format to DD-MM-YYYY.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuYearHyphenDayHyphenMonth" variable="MenuItem21" member="yes">
+						<label>YYYY-DD-MM</label>
+						<help>Sets the date format to YYYY-DD-MM.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuMonthHyphenDayHyphenYear" variable="MenuItem22" member="yes">
+						<label>MM-DD-YYYY</label>
+						<help>Sets the date format to MM-DD-YYYY.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuYearDotMonthDotDay" variable="MenuItem23" member="yes">
+						<label>YYYY.MM.DD</label>
+						<help>Sets the date format to YYYY.MM.DD.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuDayDotMonthDotYear" variable="MenuItem24" member="yes">
+						<label>DD.MM.YYYY</label>
+						<help>Sets the date format to DD.MM.YYYY.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuYearDotDayDotMonth" variable="MenuItem25" member="yes">
+						<label>YYYY.DD.MM</label>
+						<help>Sets the date format to YYYY.DD.MM.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuMonthDotDayDotYear" variable="MenuItem26" member="yes">
+						<label>MM.DD.YYYY</label>
+						<help>Sets the date format to MM.DD.YYYY.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuYearSlashMonthSlashDay" variable="MenuItem27" member="yes">
+						<label>YYYY/MM/DD</label>
+						<help>Sets the date format to YYYY/MM/DD.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuDaySlashMonthSlashYear" variable="MenuItem28" member="yes">
+						<label>DD/MM/YYYY</label>
+						<help>Sets the date format to DD/MM/YYYY.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuYearSlashDaySlashMonth" variable="MenuItem29" member="yes">
+						<label>YYYY/DD/MM</label>
+						<help>Sets the date format to YYYY/DD/MM.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuMonthSlashDaySlashYear" variable="MenuItem30" member="yes">
+						<label>MM/DD/YYYY</label>
+						<help>Sets the date format to MM/DD/YYYY.</help>
+						<radio>1</radio>
+					</object>
+				</object>
+				<object class="wxMenu" name="idMenuTargetFileEncoding" variable="MenuItem10" member="yes">
+					<label>Target file &amp;encoding</label>
+					<object class="wxMenuItem" name="idMenuANSI" variable="MenuItem11" member="yes">
+						<label>&amp;ANSI</label>
+						<help>Sets plain text details format to ANSI.</help>
+						<radio>1</radio>
+					</object>
+					<object class="wxMenuItem" name="idMenuUTF8" variable="MenuItem12" member="yes">
+						<label>&amp;UTF-8</label>
+						<help>Sets plain text details format to Unicode (UTF-8).</help>
+						<radio>1</radio>
+					</object>
+				</object>
+				<object class="wxMenuItem" name="idMenuChangeLanguage" variable="MenuItem14" member="yes">
+					<label>&amp;Change language</label>
+					<help>Changes the user interface language.</help>
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuSaveSettings" variable="MenuItem13" member="yes">
+					<label>&amp;Save settings</label>
+					<help>Saves current settings to the configuration file.</help>
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>&amp;Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>&amp;About...</label>
+					<accel>F1</accel>
+					<help>Shows info about this application.</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,47 @@
+Pogoda 95+20 (Weather 95+20) 1.0
+Autor: PeCeT_full
+Strona WWW: http://www.komputermania.pl.eu.org/pl
+Copyright © by PeCeT_full 2015. Program Pogoda 95+20 jest publikowany na zasadach licencji MIT. Wiêcej informacji mo¿na uzyskaæ zapoznaj¹c siê z plikiem Licence.txt do³¹czonym do aplikacji (polskie t³umaczenie licencji MIT: http://blaszyk-jarosinski.pl/wp-content/uploads/2008/05/licencja-mit-tlumaczenie.pdf).
+Ten produkt zawiera oprogramowanie rozwijane przez OpenSSL Project do u¿ytku w narzêdziach OpenSSL Toolkit (http://www.openssl.org/).
+
+W razie wszelkich problemów czy te¿ w¹tpliwoœci proszê o kontakt.
+
+-------------
+Opis programu
+-------------
+
+Pogoda 95+20 jest programem do prognozy pogody zaprojektowanym zarówno dla zabytkowych jak i nowoczesnych stacji roboczych PC, który korzysta z mechanizmu Yahoo Weather API do pozyskiwania szczegó³ów pogody z po³o¿enia ¿¹danego przez u¿ytkownika. Zosta³ on napisany w jêzyku C++ i korzysta z biblioteki graficznego interfejsu u¿ytkownika wxWidgets. Program ten zosta³ stworzony w celu uczczenia 20. rocznicy systemu Windows 95!
+
+Minimalne wymagania sprzêtowe i systemowe: procesor o mocy 133 MHz lub szybszy; 16 MB dostêpnej pamiêci RAM; 3 MB dostêpnego wolnego miejsca na dysku, w którym znajduje siê program; system operacyjny Windows 95 lub nowszy; aktywne po³¹czenie z Internetem.
+
+--------------------------------------------
+Przygotowanie do pracy z systemem Windows 95
+--------------------------------------------
+
+Aby oprogramowanie mog³o prawid³owo dzia³aæ na Twoim komputerze z systemem Windows 95, musisz mieæ zainstalowan¹ przegl¹darkê Microsoft Internet Explorer 5.0 lub 5.5 oraz dodatek Windows Sockets 2 (Winsock 2). Instalatory programu Internet Explorer tych¿e w³aœnie wersji aktualizuj¹ pewne istotne pliki systemowe, dziêki czemu g³ówne okno programu mo¿e byæ bezb³êdnie ukazane na ekranie, a Winsock 2 jest generalnie wymagany przez do³¹czone do programu biblioteki sieciowe.
+
+----------------
+Obs³uga programu
+----------------
+
+Program wita nas oknem g³ównym, gdzie jesteœmy gotów wpisaæ jak¹kolwiek po¿¹dan¹ lokalizacjê. Je¿eli po³o¿enie albo jakiœ jego odpowiednik zostanie pomyœlnie znaleziony w bazie danych serwisu Yahoo! Weather wraz z danymi, powinniœmy otrzymaæ wszystkie wa¿ne szczegó³y o pogodzie, takie jak: temperatura, warunki, ciœnienie, prêdkoœæ wiatru i tak dalej, które mog¹ byæ zapisane jako zwyk³y plik tekstowy b¹dŸ te¿ zawartoœæ Schowka do odwo³ywania siê w przysz³oœci.
+
+Uwaga: W systemach operacyjnych z rodziny Windows 9x mo¿na doœwiadczyæ problemów z kopiowaniem i wklejaniem szczegó³ów zachowanych w Schowku – tak jest, poniewa¿ funkcja zapisuje je w formacie, który jest kompatybilny tylko z programami posiadaj¹cymi klarowne wsparcie standardu Unicode. Jedyne obejœcie to zapisanie ich jako plik ANSI.
+
+--------------
+Opcje programu
+--------------
+
+Program Pogoda 95+20 pozwala nam na dostosowanie nastêpuj¹cych ustawieñ: 
+
+* Jednostka temperatury – obs³ugiwana jest zarówno jednostka w Celsjuszach jak i Fahrenheitach. Opcja ta zmienia równie¿ jednostki odleg³oœci (km lub mi), ciœnienia (hPa lub in) oraz prêdkoœci wiatru (km/h lub mph) w zale¿noœci od wybranej opcji.
+
+* Format czasu – mo¿emy ustawiæ zegar, by by³ formatu 12-godzinnego (AM/PM) lub 24-godzinnego.
+
+* Format daty – dostêpnych jest tam do wyboru dwanaœcie wzorów dat.
+
+* Kodowanie pliku docelowego – w zale¿noœci od zaznaczonej opcji nasze pliki zostan¹ zapisane w formacie ANSI albo Unicode (UTF-8). Nale¿y pamiêtaæ, ¿e pewne stare oprogramowanie mo¿e nie odczytaæ prawid³owo plików UTF-8.
+
+* Jêzyk – mo¿na prze³¹czyæ z obecnego jêzyka interfejsu na jeden z po¿¹danych.
+
+Upewnij siê, ¿e zapisa³eœ nowe ustawienia przed zakoñczeniem dzia³ania aplikacji, je¿eli nie chcesz ich straciæ.
