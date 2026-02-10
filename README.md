@@ -2,8 +2,6 @@
 
 Weather 95+20 is a weather forecast program designed for both vintage and modern PC workstations that uses Yahoo Weather API to retrieve weather details from a location requested by the user. It was written in C++ and uses wxWidgets GUI library. This program was created in order to celebrate the 20th Anniversary of Windows 95!
 
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/).
-
 ### Getting to work in Windows 95 ###
 
 In order to make the software work properly on your Windows 95 computer, you must have Microsoft Internet Explorer 5.0 or 5.5 and Windows Sockets 2 (Winsock 2) installed there. The Internet Explorer installers of those particular versions update some essential system files so that the main program window can be faultlessly presented on the screen and Winsock 2 is generally required by the network libraries included with the program.

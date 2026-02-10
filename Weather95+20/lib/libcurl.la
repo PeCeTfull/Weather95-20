@@ -14,7 +14,7 @@ library_names='libcurl.dll.a'
 old_library='libcurl.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/home/dast/src/win32 -lssl -lcrypto -lgdi32 -lwinmm -lz -lws2_32'
+dependency_libs=' -L/home/dast/src/win32 -lwinmm -lz -lws2_32'
 
 # Version information for libcurl.
 current=3

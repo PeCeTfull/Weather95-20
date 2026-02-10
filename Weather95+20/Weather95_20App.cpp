@@ -1,9 +1,9 @@
 /***************************************************************
  * Name:      Weather95_20App.cpp
  * Purpose:   Code for Application Class
- * Author:    PeCeT_full (pecetfull@komputermania.pl.eu.org)
+ * Author:    PeCeT_full (me@pecetfull.pl)
  * Created:   2015-07-19
- * Copyright: PeCeT_full (http://www.komputermania.pl.eu.org/)
+ * Copyright: PeCeT_full (http://www.pecetfull.pl/)
  * Licence:   The MIT License
  **************************************************************/
 
@@ -55,7 +55,7 @@ bool Weather95_20App::OnInit()
         m_TranslationHelper->Load(languageID);
 
     //(*AppInitialize
-    bool wxsOK = true;
+    bool wxsOK = ValidateApiServiceKey();
     wxInitAllImageHandlers();
     if ( wxsOK )
     {
@@ -91,4 +91,17 @@ short Weather95_20App::SelectLanguage()
 bool Weather95_20App::DoesLangsFolderExist()
 {
     return wxDir::Exists(m_TranslationHelper->languagesPath) ? true : false;
+}
+
+bool Weather95_20App::ValidateApiServiceKey()
+{
+    bool result = true;
+
+    if (API_SERVICE_KEY == "CHANGE_ME")
+    {
+        wxMessageBox(_("You are using a version of Weather 95+20 that has an invalid API key for the WeatherAPI.com service. Please contact your software provider and ask for a valid build.\n\nThe application will terminate now."), _("Error"), wxICON_HAND);
+        result = false;
+    }
+
+    return result;
 }
