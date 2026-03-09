@@ -11,7 +11,6 @@
 #define WEATHER95_20APP_H
 
 #include "wxTranslationHelper.h"
-#include "ConfigFile.h"
 #include "DevConfig.h"
 #include <wx/app.h>
 

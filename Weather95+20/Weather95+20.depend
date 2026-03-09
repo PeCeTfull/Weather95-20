@@ -2262,14 +2262,17 @@
 
 1186411252 d:\wxwidgets-2.8.12\include\wx\msw\rcdefs.h
 
-1739008143 source:c:\users\mateusz\codebase\weather95-20\weather95+20\src\configfile.cpp
+1773083856 source:c:\users\mateusz\codebase\weather95-20\weather95+20\src\configfile.cpp
 	"ConfigFile.h"
+	"../Weather95_20App.h"
 	<wx/wfstream.h>
 	<wx/sstream.h>
 	<wx/intl.h>
 
-1739008143 c:\users\mateusz\codebase\weather95-20\weather95+20\include\configfile.h
+1773074620 c:\users\mateusz\codebase\weather95-20\weather95+20\include\configfile.h
+	<wx/intl.h>
 	<wx/string.h>
+	<wx/fileconf.h>
 
 1264670766 d:\wxwidgets-2.8.12\include\wx\string.h
 	"wx/defs.h"
@@ -4164,16 +4167,16 @@
 	"wx/datetime.h"
 	"wx/intl.h"
 
-1770758032 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20app.cpp
+1773075219 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20app.cpp
 	"Weather95_20App.h"
+	"ConfigFile.h"
 	<wx/filename.h>
 	<wx/dir.h>
 	"Weather95_20Main.h"
 	<wx/image.h>
 
-1770757950 c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20app.h
+1773075239 c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20app.h
 	"wxTranslationHelper.h"
-	"ConfigFile.h"
 	"DevConfig.h"
 	<wx/app.h>
 
@@ -4207,9 +4210,10 @@
 	"wx/module.h"
 	"wx/dataobj.h"
 
-1770757710 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.cpp
+1773075482 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.cpp
 	"Weather95_20Main.h"
 	"Weather95_20App.h"
+	"ConfigFile.h"
 	"wxImagePanel.h"
 	"ApiServiceLogo.h"
 	"include/WeatherForecastRequestThread.h"
@@ -4327,7 +4331,7 @@
 	"wx/app.h"
 	"wx/icon.h"
 
-1770758155 c:\users\mateusz\codebase\weather95-20\weather95+20\include\devconfig.h
+1773071584 c:\users\mateusz\codebase\weather95-20\weather95+20\include\devconfig.h
 
 1770757448 source:c:\users\mateusz\codebase\weather95-20\weather95+20\src\weatherforecastrequestthread.cpp
 	"WeatherForecastRequestThread.h"

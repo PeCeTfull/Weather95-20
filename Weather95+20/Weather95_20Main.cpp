@@ -9,6 +9,7 @@
 
 #include "Weather95_20Main.h"
 #include "Weather95_20App.h"
+#include "ConfigFile.h"
 #include "wxImagePanel.h"
 #include "ApiServiceLogo.h"
 #include "include/WeatherForecastRequestThread.h"
@@ -681,7 +682,7 @@ void Weather95_20Frame::OnAbout(wxCommandEvent& event)
     info.SetName(_("Weather 95+20"));
     info.SetVersion(wxT("2.0"));
     info.SetCopyright(wxT("Copyright (C) PeCeT_full 2015-2026 <me@pecetfull.pl>"));
-    info.SetDescription(_("A weather forecast program for both vintage and modern PC workstations. Powered by WeatherAPI.com.\n\nBuild info: ") + wxBuildInfo(long_f) + _(".\nBuild date: ") +  __TDATE__ + wxT(", ") __TTIME__ + _(".\n\nCurrent language: ") + currentLanguageName + '.');
+    info.SetDescription(_("A weather forecast program for both vintage and modern PCs. Powered by WeatherAPI.com.\n\nBuild info: ") + wxBuildInfo(long_f) + _(".\nBuild date: ") +  __TDATE__ + wxT(", ") __TTIME__ + _(".\n\nCurrent language: ") + currentLanguageName + '.');
     info.SetWebSite(_("http://www.pecetfull.pl"));
     info.SetLicence(_("This program is published under The MIT License. For more information, please refer to the Licence.txt file included with the application.\n\nThis program also includes libraries that are necessary to launch the software. The licensing information regarding those are located in the Licences directory."));
 
@@ -886,16 +887,9 @@ void Weather95_20Frame::OnMonthSlashDaySlashYear(wxCommandEvent& event)
 
 void Weather95_20Frame::OnSaveSettings(wxCommandEvent& event)
 {
-    wxString *parameters = new wxString[PARAMS_AMOUNT];
-    parameters[0] = wxT(FILE_HEADER);
-    parameters[1] = wxT(PARAM_1) + wxString::Format(wxT("%d"), wxGetApp().languageID);
-    parameters[2] = wxT(PARAM_2) + wxGetApp().userTemperatureUnit.Upper();
-    parameters[3] = wxT(PARAM_3) + wxString::Format(wxT("%d"), wxGetApp().user24HourTimeFormat);
-    parameters[4] = wxT(PARAM_4) + wxString::Format(wxT("%d"), wxGetApp().userDateFormatVariant);
-    parameters[5] = wxT(PARAM_5) + wxString::Format(wxT("%d"), wxGetApp().userUseUTF8);
-    ConfigFile *newConfigFile = new ConfigFile();
-    newConfigFile->WriteFileContents(parameters);
-    wxDELETE(newConfigFile);
+    ConfigFile *configFile = new ConfigFile();
+    configFile->SaveConfiguration(wxGetApp().languageID, wxGetApp().userTemperatureUnit, wxGetApp().user24HourTimeFormat, wxGetApp().userDateFormatVariant, wxGetApp().userUseUTF8);
+    wxDELETE(configFile);
 }
 
 void Weather95_20Frame::OnChangeLanguage(wxCommandEvent& event)
