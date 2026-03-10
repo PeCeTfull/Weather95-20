@@ -1,93 +1,92 @@
 # Weather 95+20
-# Copyright (C) 2015 PeCeT_full
-# This file is distributed under the same license as the Weather95+20 package.
-# PeCeT_full <pecetfull@komputermania.pl.eu.org>, 2015.
+# Copyright (C) 2015-2026 PeCeT_full
+# This file is distributed under the same license as the PACKAGE package.
+# PeCeT_full <me@pecetfull.pl>, 2015-2026.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Weather 95+20 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-03 23:04+0200\n"
-"PO-Revision-Date: 2015-08-07 15:25+0200\n"
-"Last-Translator: PeCeT_full <pecetfull@komputermania.pl.eu.org>\n"
+"POT-Creation-Date: 2026-03-09 22:37+0100\n"
+"PO-Revision-Date: 2026-03-10 20:22+0100\n"
+"Last-Translator: PeCeT_full <me@pecetfull.pl>\n"
 "Language-Team: \n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.8\n"
 
-#: cppfiles/Weather95_20Main.cpp:477
+#: cppfiles/Weather95_20Main.cpp:476
 msgid "&12-hour clock"
 msgstr "Zegar &12-godzinny"
 
-#: cppfiles/Weather95_20Main.cpp:479
+#: cppfiles/Weather95_20Main.cpp:478
 msgid "&24-hour clock"
 msgstr "Zegar &24-godzinny"
 
-#: cppfiles/Weather95_20Main.cpp:509
+#: cppfiles/Weather95_20Main.cpp:508
 msgid "&ANSI"
-msgstr ""
+msgstr "&ANSI"
 
-#: cppfiles/Weather95_20Main.cpp:521
+#: cppfiles/Weather95_20Main.cpp:520
 msgid "&About...\tF1"
 msgstr "&O programie...\tF1"
 
-#: cppfiles/Weather95_20Main.cpp:471
-msgid "&Celsius"
-msgstr "&Celsjusz"
-
-#: cppfiles/Weather95_20Main.cpp:514
+#: cppfiles/Weather95_20Main.cpp:513
 msgid "&Change language"
 msgstr "&Zmień język"
 
-#: cppfiles/Weather95_20Main.cpp:455
+#: cppfiles/Weather95_20Main.cpp:454
 msgid "&Check\tEnter"
 msgstr "&Sprawdź\tEnter"
 
-#: cppfiles/Weather95_20Main.cpp:507
+#: cppfiles/Weather95_20Main.cpp:506
 msgid "&Date format"
 msgstr "Format &daty"
 
-#: cppfiles/Weather95_20Main.cpp:473
-msgid "&Fahrenheit"
-msgstr ""
-
-#: cppfiles/Weather95_20Main.cpp:468
+#: cppfiles/Weather95_20Main.cpp:467
 msgid "&File"
 msgstr "&Plik"
 
-#: cppfiles/Weather95_20Main.cpp:523
+#: cppfiles/Weather95_20Main.cpp:522
 msgid "&Help"
 msgstr "Pomo&c"
 
-#: cppfiles/Weather95_20Main.cpp:519
+#: cppfiles/Weather95_20Main.cpp:470
+msgid "&Imperial"
+msgstr "&Imperialne"
+
+#: cppfiles/Weather95_20Main.cpp:472
+msgid "&Metric"
+msgstr "&Metryczne"
+
+#: cppfiles/Weather95_20Main.cpp:518
 msgid "&Options"
 msgstr "&Opcje"
 
-#: cppfiles/Weather95_20Main.cpp:464
+#: cppfiles/Weather95_20Main.cpp:463
 msgid "&Save"
 msgstr "&Zapisz"
 
-#: cppfiles/Weather95_20Main.cpp:517
+#: cppfiles/Weather95_20Main.cpp:516
 msgid "&Save settings"
 msgstr "Zapisz &ustawienia"
 
-#: cppfiles/Weather95_20Main.cpp:481
+#: cppfiles/Weather95_20Main.cpp:480
 msgid "&Time format"
 msgstr "Format &czasu"
 
-#: cppfiles/Weather95_20Main.cpp:511
+#: cppfiles/Weather95_20Main.cpp:510
 msgid "&UTF-8"
-msgstr ""
+msgstr "&UTF-8"
 
-#: cppfiles/Weather95_20Main.cpp:951
+#: cppfiles/Weather95_20Main.cpp:1062
 msgid "). Last updated: "
-msgstr "). Ost. aktualizacja: "
+msgstr "). Ostatnia aktualizacja: "
 
-#: cppfiles/Weather95_20Main.cpp:668
+#: cppfiles/Weather95_20Main.cpp:685
 msgid ""
 ".\n"
 "\n"
@@ -97,43 +96,31 @@ msgstr ""
 "\n"
 "Obecny język: "
 
-#: cppfiles/Weather95_20Main.cpp:668
+#: cppfiles/Weather95_20Main.cpp:685
 msgid ""
 ".\n"
 "Build date: "
 msgstr ""
 ".\n"
-"Data utworzenia: "
+"Data kompilacji: "
 
-#: cppfiles/Weather95_20Main.cpp:353 cppfiles/Weather95_20Main.cpp:980
+#: cppfiles/Weather95_20Main.cpp:406 cppfiles/Weather95_20Main.cpp:1232
 msgid "3rd Day"
 msgstr "Pojutrze"
 
-#: cppfiles/Weather95_20Main.cpp:387 cppfiles/Weather95_20Main.cpp:982
-msgid "4th Day"
-msgstr "4. dnia"
-
-#: cppfiles/Weather95_20Main.cpp:419 cppfiles/Weather95_20Main.cpp:984
-msgid "5th Day"
-msgstr "5. dnia"
-
-#: cppfiles/Weather95_20Main.cpp:668
+#: cppfiles/Weather95_20Main.cpp:685
 msgid ""
-"A weather forecast program for both vintage and modern PC workstations. "
-"Powered by Yahoo Weather API.\n"
-"This product includes software developed by the OpenSSL Project for use in "
-"the OpenSSL Toolkit (http://www.openssl.org/).\n"
+"A weather forecast program for both vintage and modern PCs. Powered by "
+"WeatherAPI.com.\n"
 "\n"
 "Build info: "
 msgstr ""
-"Program do prognozy pogody zarówno dla zabytkowych jak i nowoczesnych stacji "
-"roboczych PC. Napędzany przez Yahoo Weather API.\n"
-"Ten produkt zawiera oprogramowanie rozwijane przez OpenSSL Project do użytku "
-"w narzędziach OpenSSL Toolkit (http://www.openssl.org/).\n"
+"Program do prognozy pogody zarówno dla zabytkowych jak i nowoczesnych "
+"komputerów PC. Napędzany przez WeatherAPI.com.\n"
 "\n"
-"Informacje o buildzie: "
+"Informacje o kompilacji: "
 
-#: cppfiles/Weather95_20Main.cpp:1276
+#: cppfiles/Weather95_20Main.cpp:901
 msgid ""
 "Another language has just been selected. To reflect all the changes, please "
 "save current settings and then restart the application."
@@ -148,92 +135,87 @@ msgstr ""
 "Tablica nazw języków powinna być tego samego rozmiaru, co tablica "
 "identyfikatorów."
 
-#: cppfiles/Weather95_20Main.cpp:458
+#: cppfiles/Weather95_20Main.cpp:457
 msgid "As &file...\tCtrl+S"
 msgstr "Jako &plik...\tCtrl+S"
 
-#: cppfiles/Weather95_20Main.cpp:1040
+#: cppfiles/Weather95_20Main.cpp:1069
 msgid "As of:"
 msgstr "Stan na:"
 
-#: cppfiles/Weather95_20Main.cpp:273
+#: cppfiles/Weather95_20Main.cpp:281
 msgid "Astronomy"
 msgstr "Astronomia"
 
-#: cppfiles/Weather95_20Main.cpp:257
+#: cppfiles/Weather95_20Main.cpp:263
 msgid "Atmosphere"
 msgstr "Atmosfera"
 
-#: cppfiles/Weather95_20Main.cpp:602
-msgid "Blowing snow"
-msgstr "Zamieć śnieżna"
-
-#: cppfiles/Weather95_20Main.cpp:610
-msgid "Blustery"
-msgstr "Porywisto"
-
-#: cppfiles/Weather95_20Main.cpp:1064
+#: cppfiles/Weather95_20Main.cpp:1093
 msgid "CONDITION"
 msgstr "WARUNKI"
 
-#: cppfiles/Weather95_20Main.cpp:1061
+#: cppfiles/Weather95_20Main.cpp:1090
 msgid "CURRENT CONDITIONS"
 msgstr "OBECNE WARUNKI"
 
-#: cppfiles/Weather95_20Main.cpp:514
+#: cppfiles/Weather95_20Main.cpp:1141 cppfiles/Weather95_20Main.cpp:1158
+#: cppfiles/Weather95_20Main.cpp:1175 cppfiles/Weather95_20Main.cpp:1243
+#: cppfiles/Weather95_20Main.cpp:1260 cppfiles/Weather95_20Main.cpp:1277
+#, c-format
+msgid "Chance of rain: %s"
+msgstr "Szansa opadów deszczu: %s"
+
+#: cppfiles/Weather95_20Main.cpp:351 cppfiles/Weather95_20Main.cpp:395
+#: cppfiles/Weather95_20Main.cpp:439
+msgid "Chance of rain: N/A"
+msgstr "Szansa opadów deszczu: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:1143 cppfiles/Weather95_20Main.cpp:1160
+#: cppfiles/Weather95_20Main.cpp:1177 cppfiles/Weather95_20Main.cpp:1245
+#: cppfiles/Weather95_20Main.cpp:1262 cppfiles/Weather95_20Main.cpp:1279
+#, c-format
+msgid "Chance of snow: %s"
+msgstr "Szansa opadów śniegu: %s"
+
+#: cppfiles/Weather95_20Main.cpp:353 cppfiles/Weather95_20Main.cpp:397
+#: cppfiles/Weather95_20Main.cpp:441
+msgid "Chance of snow: N/A"
+msgstr "Szansa opadów śniegu: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:513
 msgid "Changes the user interface language."
 msgstr "Zmienia język interfejsu użytkownika."
 
-#: cppfiles/Weather95_20Main.cpp:455
+#: cppfiles/Weather95_20Main.cpp:454
 msgid "Checks the weather in the city provided."
 msgstr "Sprawdza pogodę w podanej miejscowości."
 
-#: cppfiles/Weather95_20Main.cpp:957 cppfiles/Weather95_20Main.cpp:1067
-#, c-format
-msgid "Chill: %s"
-msgstr "Odczuwalna: %s"
-
-#: cppfiles/Weather95_20Main.cpp:249
-msgid "Chill: N/A"
-msgstr "Odczuwalna: N/W"
-
-#: cppfiles/Weather95_20Main.cpp:1043
+#: cppfiles/Weather95_20Main.cpp:1072
 #, c-format
 msgid "City: %s"
 msgstr "Miejscowość: %s"
 
-#: cppfiles/Weather95_20Main.cpp:618
-msgid "Clear (night)"
-msgstr "Czyste niebo (noc)"
+#: cppfiles/Weather95_20Main.cpp:1109 cppfiles/Weather95_20Main.cpp:1207
+#, c-format
+msgid "Cloud cover: %s"
+msgstr "Zachmurzenie: %s"
 
-#: cppfiles/Weather95_20Main.cpp:613
-msgid "Cloudy"
-msgstr "Pochmurnie"
+#: cppfiles/Weather95_20Main.cpp:275
+msgid "Cloud cover: N/A"
+msgstr "Zachmurzenie: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:612
-msgid "Cold"
-msgstr "Zimno"
-
-#: cppfiles/Weather95_20Main.cpp:1093 cppfiles/Weather95_20Main.cpp:1100
-#: cppfiles/Weather95_20Main.cpp:1107 cppfiles/Weather95_20Main.cpp:1114
-#: cppfiles/Weather95_20Main.cpp:1121
+#: cppfiles/Weather95_20Main.cpp:1137 cppfiles/Weather95_20Main.cpp:1154
+#: cppfiles/Weather95_20Main.cpp:1171
 #, c-format
 msgid "Condition: %s"
 msgstr "Warunki: %s"
 
-#: cppfiles/Weather95_20Main.cpp:461
+#: cppfiles/Weather95_20Main.cpp:460
 msgid "Copies the weather details to the system clipboard."
 msgstr "Kopiuje szczegóły pogody do schowka systemowego."
 
-#: cppfiles/Weather95_20Main.cpp:1030
-msgid ""
-"Could not find the location or any of its counterparts in Yahoo! Weather's "
-"database."
-msgstr ""
-"Nie udało się odnaleźć położenia ani żadnego z jego odpowiedników w bazie "
-"danych serwisu Yahoo! Weather."
-
-#: cppfiles/Weather95_20Main.cpp:806
+#: cppfiles/WeatherForecastRequestThread.cpp:60
 #, c-format
 msgid ""
 "Could not successfully establish the connection due to the following reason: "
@@ -241,496 +223,378 @@ msgid ""
 msgstr ""
 "Nie udało się pomyślnie ustanowić połączenia z następującego powodu: %s."
 
-#: cppfiles/Weather95_20Main.cpp:1052
+#: cppfiles/Weather95_20Main.cpp:1081
 #, c-format
 msgid "Country: %s"
 msgstr "Państwo: %s"
 
-#: cppfiles/Weather95_20Main.cpp:223
+#: cppfiles/Weather95_20Main.cpp:229
 msgid "Current conditions"
 msgstr "Obecne warunki"
 
-#: cppfiles/Weather95_20Main.cpp:485
+#: cppfiles/Weather95_20Main.cpp:484
 msgid "DD-MM-YYYY"
 msgstr "DD-MM-RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:493
+#: cppfiles/Weather95_20Main.cpp:492
 msgid "DD.MM.YYYY"
 msgstr "DD.MM.RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:501
+#: cppfiles/Weather95_20Main.cpp:500
 msgid "DD/MM/YYYY"
 msgstr "DD/MM/RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:941
+#: cppfiles/jsonreader.cpp:2132
 msgid "DEC_FRACTION_DOT"
 msgstr "DEC_FRACTION_COMMA"
 
-#: cppfiles/Weather95_20Main.cpp:951
+#: cppfiles/Weather95_20Main.cpp:1062
 msgid "Data for: "
 msgstr "Dane dla: "
 
-#: cppfiles/Weather95_20Main.cpp:959 cppfiles/Weather95_20Main.cpp:1069
+#: cppfiles/Weather95_20Main.cpp:1127 cppfiles/Weather95_20Main.cpp:1223
+#, c-format
+msgid "Dew point: %s"
+msgstr "Punkt rosy: %s"
+
+#: cppfiles/Weather95_20Main.cpp:307
+msgid "Dew point: N/A"
+msgstr "Punkt rosy: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:1096 cppfiles/Weather95_20Main.cpp:1195
 #, c-format
 msgid "Direction: %s"
 msgstr "Kierunek: %s"
 
-#: cppfiles/Weather95_20Main.cpp:251
+#: cppfiles/Weather95_20Main.cpp:255
 msgid "Direction: N/A"
-msgstr "Kierunek: N/W"
+msgstr "Kierunek: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:596
-msgid "Drizzle"
-msgstr "Mżawka"
-
-#: cppfiles/Weather95_20Main.cpp:606
-msgid "Dust"
-msgstr "Pylenie"
-
-#: cppfiles/Weather95_20Main.cpp:466
+#: cppfiles/Weather95_20Main.cpp:465
 msgid "E&xit\tAlt+F4"
 msgstr "Za&kończ\tAlt+F4"
 
-#: cppfiles/Weather95_20Main.cpp:806 cppfiles/Weather95_20Main.cpp:820
-#: cppfiles/Weather95_20Main.cpp:1027 cppfiles/Weather95_20Main.cpp:1030
-#: cppfiles/Weather95_20Main.cpp:1150
+#: cppfiles/Weather95_20App.cpp:85 cppfiles/Weather95_20Main.cpp:639
+#: cppfiles/Weather95_20Main.cpp:643 cppfiles/Weather95_20Main.cpp:660
+#: cppfiles/Weather95_20Main.cpp:782
 msgid "Error"
 msgstr "Błąd"
 
-#: cppfiles/Weather95_20Main.cpp:621
-msgid "Fair (day)"
-msgstr "Ładna pogoda (dzień)"
+#: cppfiles/Weather95_20Main.cpp:1121 cppfiles/Weather95_20Main.cpp:1217
+#, c-format
+msgid "Feels like: %s"
+msgstr "Odczuwalna: %s"
 
-#: cppfiles/Weather95_20Main.cpp:620
-msgid "Fair (night)"
-msgstr "Ładna pogoda (noc)"
+#: cppfiles/Weather95_20Main.cpp:301
+msgid "Feels like: N/A"
+msgstr "Odczuwalna: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:607
-msgid "Foggy"
-msgstr "Mglisto"
+#: cppfiles/Weather95_20Main.cpp:1100 cppfiles/Weather95_20Main.cpp:1199
+#, c-format
+msgid "Gust: %s"
+msgstr "Podmuch: %s"
 
-#: cppfiles/Weather95_20Main.cpp:595
-msgid "Freezing drizzle"
-msgstr "Marznąca mżawka"
+#: cppfiles/Weather95_20Main.cpp:259
+msgid "Gust: N/A"
+msgstr "Podmuch: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:597
-msgid "Freezing rain"
-msgstr "Marznący deszcz"
+#: cppfiles/Weather95_20Main.cpp:1125 cppfiles/Weather95_20Main.cpp:1221
+#, c-format
+msgid "Heat index: %s"
+msgstr "Indeks ciepła: %s"
 
-#: cppfiles/Weather95_20Main.cpp:752
-msgid "Friday"
-msgstr "piątek"
+#: cppfiles/Weather95_20Main.cpp:305
+msgid "Heat index: N/A"
+msgstr "Indeks ciepła: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:604
-msgid "Hail"
-msgstr "Grad"
-
-#: cppfiles/Weather95_20Main.cpp:608
-msgid "Haze"
-msgstr "Mgiełka"
-
-#: cppfiles/Weather95_20Main.cpp:628 cppfiles/Weather95_20Main.cpp:630
-msgid "Heavy snow"
-msgstr "Obfite opady śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:623
-msgid "Hot"
-msgstr "Gorąco"
-
-#: cppfiles/Weather95_20Main.cpp:963 cppfiles/Weather95_20Main.cpp:1074
+#: cppfiles/Weather95_20Main.cpp:1107 cppfiles/Weather95_20Main.cpp:1205
 #, c-format
 msgid "Humidity: %s"
 msgstr "Wilgotność: %s"
 
-#: cppfiles/Weather95_20Main.cpp:263
+#: cppfiles/Weather95_20Main.cpp:273
 msgid "Humidity: N/A"
-msgstr "Wilgotność: N/W"
+msgstr "Wilgotność: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:589
-msgid "Hurricane"
-msgstr "Huragan"
+#: cppfiles/Weather95_20Main.cpp:295
+msgid "Index"
+msgstr "Indeks"
 
-#: cppfiles/Weather95_20Main.cpp:634
-msgid "Isolated thundershowers"
-msgstr "Pojedyncze burze z deszczem"
-
-#: cppfiles/Weather95_20Main.cpp:624
-msgid "Isolated thunderstorms"
-msgstr "Pojedyncze burze"
-
-#: cppfiles/Weather95_20Main.cpp:1041
+#: cppfiles/Weather95_20Main.cpp:1070
 msgid "LOCATION"
 msgstr "POŁOŻENIE"
 
 #: cppfiles/wxTranslationHelper.cpp:71
 msgid "Language"
-msgstr "Język"
+msgstr "Język (Language)"
 
-#: cppfiles/Weather95_20Main.cpp:1057
+#: cppfiles/Weather95_20Main.cpp:1086
 #, c-format
 msgid "Latitude: %s"
 msgstr "Szerokość geograficzna: %s"
 
-#: cppfiles/Weather95_20Main.cpp:601
-msgid "Light snow showers"
-msgstr "Lekkie opady śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:1297
+#: cppfiles/Weather95_20Main.cpp:922
 msgid "Location status"
 msgstr "Status położenia"
 
-#: cppfiles/Weather95_20Main.cpp:216
+#: cppfiles/Weather95_20Main.cpp:221
 msgid "Location:"
 msgstr "Położenie:"
 
-#: cppfiles/Weather95_20Main.cpp:1059
+#: cppfiles/Weather95_20Main.cpp:1088
 #, c-format
 msgid "Longitude: %s"
 msgstr "Długość geograficzna: %s"
 
-#: cppfiles/Weather95_20Main.cpp:489
+#: cppfiles/Weather95_20Main.cpp:488
 msgid "MM-DD-YYYY"
 msgstr "MM-DD-RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:497
+#: cppfiles/Weather95_20Main.cpp:496
 msgid "MM.DD.YYYY"
 msgstr "MM.DD.RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:505
+#: cppfiles/Weather95_20Main.cpp:504
 msgid "MM/DD/YYYY"
 msgstr "MM/DD/RRRR"
 
-#: cppfiles/Weather95_20Main.cpp:296 cppfiles/Weather95_20Main.cpp:328
-#: cppfiles/Weather95_20Main.cpp:360 cppfiles/Weather95_20Main.cpp:394
-#: cppfiles/Weather95_20Main.cpp:426
-msgid "Max. temperature:"
-msgstr "Maks. temperatura:"
-
-#: cppfiles/Weather95_20Main.cpp:1089 cppfiles/Weather95_20Main.cpp:1096
-#: cppfiles/Weather95_20Main.cpp:1103 cppfiles/Weather95_20Main.cpp:1110
-#: cppfiles/Weather95_20Main.cpp:1117
+#: cppfiles/Weather95_20Main.cpp:1133 cppfiles/Weather95_20Main.cpp:1150
+#: cppfiles/Weather95_20Main.cpp:1167
 #, c-format
 msgid "Maximal temperature: %s"
-msgstr "Maksymalna temperatura: %s"
+msgstr "Temperatura maksymalna: %s"
 
-#: cppfiles/Weather95_20Main.cpp:1276
+#: cppfiles/Weather95_20Main.cpp:1139 cppfiles/Weather95_20Main.cpp:1156
+#: cppfiles/Weather95_20Main.cpp:1173 cppfiles/Weather95_20Main.cpp:1241
+#: cppfiles/Weather95_20Main.cpp:1258 cppfiles/Weather95_20Main.cpp:1275
+#, c-format
+msgid "Maximum wind: %s"
+msgstr "Maksymalny wiatr: %s"
+
+#: cppfiles/Weather95_20Main.cpp:349 cppfiles/Weather95_20Main.cpp:393
+#: cppfiles/Weather95_20Main.cpp:437
+msgid "Maximum wind: N/A"
+msgstr "Maksymalny wiatr: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:474
+msgid "Measuring &units"
+msgstr "&Jednostki miary"
+
+#: cppfiles/Weather95_20Main.cpp:901
 msgid "Message"
 msgstr "Komunikat"
 
-#: cppfiles/Weather95_20Main.cpp:307 cppfiles/Weather95_20Main.cpp:339
-#: cppfiles/Weather95_20Main.cpp:371 cppfiles/Weather95_20Main.cpp:405
-#: cppfiles/Weather95_20Main.cpp:437
-msgid "Min. temperature:"
-msgstr "Min. temperatura:"
-
-#: cppfiles/Weather95_20Main.cpp:1091 cppfiles/Weather95_20Main.cpp:1098
-#: cppfiles/Weather95_20Main.cpp:1105 cppfiles/Weather95_20Main.cpp:1112
-#: cppfiles/Weather95_20Main.cpp:1119
+#: cppfiles/Weather95_20Main.cpp:1135 cppfiles/Weather95_20Main.cpp:1152
+#: cppfiles/Weather95_20Main.cpp:1169
 #, c-format
 msgid "Minimal temperature: %s"
-msgstr "Minimalna temperatura: %s"
+msgstr "Temperatura minimalna: %s"
 
-#: cppfiles/Weather95_20Main.cpp:622
-msgid "Mixed rain and hail"
-msgstr "Deszcz z gradem"
-
-#: cppfiles/Weather95_20Main.cpp:593
-msgid "Mixed rain and sleet"
-msgstr "Deszcz i deszcz ze śniegiem"
-
-#: cppfiles/Weather95_20Main.cpp:592
-msgid "Mixed rain and snow"
-msgstr "Opady deszczu i śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:594
-msgid "Mixed snow and sleet"
-msgstr "Śnieg i deszcz ze śniegiem"
-
-#: cppfiles/Weather95_20Main.cpp:744
-msgid "Monday"
-msgstr "poniedziałek"
-
-#: cppfiles/Weather95_20Main.cpp:615
-msgid "Mostly cloudy (day)"
-msgstr "Przewaga chmur (dzień)"
-
-#: cppfiles/Weather95_20Main.cpp:614
-msgid "Mostly cloudy (night)"
-msgstr "Przewaga chmur (noc)"
-
-#: cppfiles/Weather95_20Main.cpp:232 cppfiles/Weather95_20Main.cpp:298
-#: cppfiles/Weather95_20Main.cpp:309 cppfiles/Weather95_20Main.cpp:330
-#: cppfiles/Weather95_20Main.cpp:341 cppfiles/Weather95_20Main.cpp:362
-#: cppfiles/Weather95_20Main.cpp:373 cppfiles/Weather95_20Main.cpp:396
-#: cppfiles/Weather95_20Main.cpp:407 cppfiles/Weather95_20Main.cpp:428
-#: cppfiles/Weather95_20Main.cpp:439
-msgid "N/A"
-msgstr "N/W"
-
-#: cppfiles/Weather95_20Main.cpp:1027
+#: cppfiles/Weather95_20Main.cpp:1215
+#, c-format
 msgid ""
-"No data is currently available for the requested location. Please enter "
-"another location or try again later."
+"Moon phase:\n"
+"%s"
 msgstr ""
-"Żadne dane nie są obecnie dostępne dla żądanej lokalizacji. Proszę "
-"wprowadzić inne położenie albo spróbować ponownie później."
+"Faza Księżyca:\n"
+"%s"
 
-#: cppfiles/Weather95_20Main.cpp:635
-msgid "Not available"
-msgstr "Stan pogody niedostępny"
+#: cppfiles/Weather95_20Main.cpp:1118
+#, c-format
+msgid "Moon phase: %s"
+msgstr "Faza Księżyca: %s"
 
-#: cppfiles/Weather95_20Main.cpp:880
-msgid "PRESSURE_MB"
-msgstr "PRESSURE_HPA"
+#: cppfiles/Weather95_20Main.cpp:291
+msgid "Moon phase: N/A"
+msgstr "Faza Księżyca: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:631
-msgid "Partly cloudy"
-msgstr "Częściowe zachmurzenie"
+#: cppfiles/Weather95_20Main.cpp:238 cppfiles/Weather95_20Main.cpp:325
+#: cppfiles/Weather95_20Main.cpp:338 cppfiles/Weather95_20Main.cpp:369
+#: cppfiles/Weather95_20Main.cpp:382 cppfiles/Weather95_20Main.cpp:413
+#: cppfiles/Weather95_20Main.cpp:426
+msgid "N/A"
+msgstr "N/D"
 
-#: cppfiles/Weather95_20Main.cpp:617
-msgid "Partly cloudy (day)"
-msgstr "Częściowe zachmurzenie (dzień)"
-
-#: cppfiles/Weather95_20Main.cpp:616
-msgid "Partly cloudy (night)"
-msgstr "Częściowe zachmurzenie (noc)"
-
-#: cppfiles/Weather95_20Main.cpp:1055
+#: cppfiles/Weather95_20Main.cpp:1084
 #, c-format
 msgid "Place: %s"
 msgstr "Miejsce: %s"
 
-#: cppfiles/Weather95_20Main.h:62
+#: cppfiles/Weather95_20Main.h:75
 msgid "Please type the location and hit Enter."
 msgstr "Proszę wpisać położenie i nacisnąć klawisz Enter."
 
-#: cppfiles/Weather95_20Main.cpp:1039
-msgid "Powered by Yahoo!"
-msgstr "W oparciu o Yahoo!"
+#: cppfiles/Weather95_20Main.cpp:1068
+msgid "Powered by WeatherAPI.com"
+msgstr "W oparciu o WeatherAPI.com"
 
-#: cppfiles/Weather95_20Main.cpp:967 cppfiles/Weather95_20Main.cpp:1078
+#: cppfiles/Weather95_20Main.cpp:1105 cppfiles/Weather95_20Main.cpp:1203
+#, c-format
+msgid "Precipitation: %s"
+msgstr "Opady: %s"
+
+#: cppfiles/Weather95_20Main.cpp:271
+msgid "Precipitation: N/A"
+msgstr "Opady: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:1103 cppfiles/Weather95_20Main.cpp:1201
 #, c-format
 msgid "Pressure: %s"
 msgstr "Ciśnienie: %s"
 
-#: cppfiles/Weather95_20Main.cpp:267
+#: cppfiles/Weather95_20Main.cpp:269
 msgid "Pressure: N/A"
-msgstr "Ciśnienie: N/W"
+msgstr "Ciśnienie: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:466
+#: cppfiles/Weather95_20Main.cpp:465
 msgid "Quits the application."
 msgstr "Kończy działanie aplikacji."
 
-#: cppfiles/Weather95_20Main.cpp:1047
+#: cppfiles/Weather95_20Main.cpp:1076
 #, c-format
 msgid "Region: %s"
-msgstr ""
+msgstr "Region: %s"
 
-#: cppfiles/Weather95_20Main.cpp:969 cppfiles/Weather95_20Main.cpp:1080
-#, c-format
-msgid "Rising: %s"
-msgstr "Przyrost: %s"
-
-#: cppfiles/Weather95_20Main.cpp:269
-msgid "Rising: N/A"
-msgstr "Przyrost: N/W"
-
-#: cppfiles/Weather95_20Main.cpp:754
-msgid "Saturday"
-msgstr "sobota"
-
-#: cppfiles/Weather95_20Main.cpp:1129
+#: cppfiles/Weather95_20Main.cpp:761
 msgid "Save as file..."
 msgstr "Zapisz jako plik..."
 
-#: cppfiles/Weather95_20Main.cpp:517
+#: cppfiles/Weather95_20Main.cpp:516
 msgid "Saves current settings to the configuration file."
 msgstr "Zapisuje obecne ustawienia do pliku konfiguracyjnego."
 
-#: cppfiles/Weather95_20Main.cpp:458
+#: cppfiles/Weather95_20Main.cpp:457
 msgid "Saves the weather details to a specified file."
 msgstr "Zapisuje szczegóły pogody do określonego pliku."
 
-#: cppfiles/Weather95_20Main.cpp:627
-msgid "Scattered showers"
-msgstr "Przelotne opady deszczu"
-
-#: cppfiles/Weather95_20Main.cpp:629
-msgid "Scattered snow showers"
-msgstr "Przelotne opady śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:625 cppfiles/Weather95_20Main.cpp:626
-msgid "Scattered thunderstorms"
-msgstr "Przejściowe burze"
-
 #: cppfiles/wxTranslationHelper.cpp:71
 msgid "Select your language."
-msgstr "Wybierz swój język."
+msgstr "Wybierz swój język. (Select your language.)"
 
-#: cppfiles/Weather95_20Main.cpp:509
+#: cppfiles/Weather95_20Main.cpp:508
 msgid "Sets plain text details format to ANSI."
 msgstr "Ustawia format tekstu zwykłego dla szczegółów na ANSI."
 
-#: cppfiles/Weather95_20Main.cpp:511
+#: cppfiles/Weather95_20Main.cpp:510
 msgid "Sets plain text details format to Unicode (UTF-8)."
 msgstr "Ustawia format tekstu zwykłego dla szczegółów na Unicode (UTF-8)."
 
-#: cppfiles/Weather95_20Main.cpp:485
+#: cppfiles/Weather95_20Main.cpp:484
 msgid "Sets the date format to DD-MM-YYYY."
 msgstr "Ustawia format daty na DD-MM-RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:493
+#: cppfiles/Weather95_20Main.cpp:492
 msgid "Sets the date format to DD.MM.YYYY."
 msgstr "Ustawia format daty na DD.MM.RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:501
+#: cppfiles/Weather95_20Main.cpp:500
 msgid "Sets the date format to DD/MM/YYYY."
 msgstr "Ustawia format daty na DD/MM/RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:489
+#: cppfiles/Weather95_20Main.cpp:488
 msgid "Sets the date format to MM-DD-YYYY."
 msgstr "Ustawia format daty na MM-DD-RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:497
+#: cppfiles/Weather95_20Main.cpp:496
 msgid "Sets the date format to MM.DD.YYYY."
 msgstr "Ustawia format daty na MM.DD.RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:505
+#: cppfiles/Weather95_20Main.cpp:504
 msgid "Sets the date format to MM/DD/YYYY."
 msgstr "Ustawia format daty na MM/DD/RRRR."
 
-#: cppfiles/Weather95_20Main.cpp:487
+#: cppfiles/Weather95_20Main.cpp:486
 msgid "Sets the date format to YYYY-DD-MM."
 msgstr "Ustawia format daty na RRRR-DD-MM."
 
-#: cppfiles/Weather95_20Main.cpp:483
+#: cppfiles/Weather95_20Main.cpp:482
 msgid "Sets the date format to YYYY-MM-DD."
 msgstr "Ustawia format daty na RRRR-MM-DD."
 
-#: cppfiles/Weather95_20Main.cpp:495
+#: cppfiles/Weather95_20Main.cpp:494
 msgid "Sets the date format to YYYY.DD.MM."
 msgstr "Ustawia format daty na RRRR.DD.MM."
 
-#: cppfiles/Weather95_20Main.cpp:491
+#: cppfiles/Weather95_20Main.cpp:490
 msgid "Sets the date format to YYYY.MM.DD."
 msgstr "Ustawia format daty na RRRR.MM.DD."
 
-#: cppfiles/Weather95_20Main.cpp:503
+#: cppfiles/Weather95_20Main.cpp:502
 msgid "Sets the date format to YYYY/DD/MM."
 msgstr "Ustawia format daty na RRRR/DD/MM."
 
-#: cppfiles/Weather95_20Main.cpp:499
+#: cppfiles/Weather95_20Main.cpp:498
 msgid "Sets the date format to YYYY/MM/DD."
 msgstr "Ustawia format daty na RRRR/MM/DD."
 
-#: cppfiles/Weather95_20Main.cpp:471
+#: cppfiles/Weather95_20Main.cpp:472
 msgid ""
 "Sets the temperature unit to Celsius along with distance (km), pressure (mb) "
 "and wind speed (kph)."
 msgstr ""
-"Ustawia jedn. temp. na Celsjusza wraz z odległością (km), ciśnieniem (hPa) "
-"oraz prędkością wiatru (km/h)."
+"Ustawia jednostkę temperatury na Celsjusza wraz z odległością (km), "
+"ciśnieniem (hPa) oraz prędkością wiatru (km/h)."
 
-#: cppfiles/Weather95_20Main.cpp:473
+#: cppfiles/Weather95_20Main.cpp:470
 msgid ""
 "Sets the temperature unit to Fahrenheit along with distance (mi), pressure "
 "(in) and wind speed (mph)."
 msgstr ""
-"Ustawia jedn. temp. na Fahrenheita wraz z odległością (mi), ciśnieniem (in) "
-"oraz prędkością wiatru (mph)."
+"Ustawia jednostkę temperatury na Fahrenheita wraz z odległością (mi), "
+"ciśnieniem (in) oraz prędkością wiatru (mph)."
 
-#: cppfiles/Weather95_20Main.cpp:477
+#: cppfiles/Weather95_20Main.cpp:476
 msgid "Sets the time format to 12-hour (AM/PM)."
 msgstr "Ustawia format czasu na format 12-godzinny (AM/PM)."
 
-#: cppfiles/Weather95_20Main.cpp:479
+#: cppfiles/Weather95_20Main.cpp:478
 msgid "Sets the time format to 24-hour."
 msgstr "Ustawia format czasu na format 24-godzinny."
 
-#: cppfiles/Weather95_20Main.cpp:590
-msgid "Severe thunderstorms"
-msgstr "Silne burze"
-
-#: cppfiles/Weather95_20Main.cpp:598 cppfiles/Weather95_20Main.cpp:599
-msgid "Showers"
-msgstr "Opady deszczu"
-
-#: cppfiles/Weather95_20Main.cpp:521
+#: cppfiles/Weather95_20Main.cpp:520
 msgid "Shows info about this application."
 msgstr "Pokazuje informacje o tej aplikacji."
 
-#: cppfiles/Weather95_20Main.cpp:605
-msgid "Sleet"
-msgstr "Deszcz ze śniegiem"
-
-#: cppfiles/Weather95_20Main.cpp:609
-msgid "Smoky"
-msgstr "Zadymienie"
-
-#: cppfiles/Weather95_20Main.cpp:603
-msgid "Snow"
-msgstr "Śnieg"
-
-#: cppfiles/Weather95_20Main.cpp:600
-msgid "Snow flurries"
-msgstr "Podmuch śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:633
-msgid "Snow showers"
-msgstr "Opady śniegu"
-
-#: cppfiles/Weather95_20Main.cpp:961 cppfiles/Weather95_20Main.cpp:1071
+#: cppfiles/Weather95_20Main.cpp:1098 cppfiles/Weather95_20Main.cpp:1197
 #, c-format
 msgid "Speed: %s"
 msgstr "Prędkość: %s"
 
-#: cppfiles/Weather95_20Main.cpp:253
+#: cppfiles/Weather95_20Main.cpp:257
 msgid "Speed: N/A"
-msgstr "Prędkość: N/W"
+msgstr "Prędkość: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:756
-msgid "Sunday"
-msgstr "niedziela"
-
-#: cppfiles/Weather95_20Main.cpp:619
-msgid "Sunny"
-msgstr "Słonecznie"
-
-#: cppfiles/Weather95_20Main.cpp:971 cppfiles/Weather95_20Main.cpp:1083
+#: cppfiles/Weather95_20Main.cpp:1114 cppfiles/Weather95_20Main.cpp:1211
 #, c-format
 msgid "Sunrise: %s"
 msgstr "Wschód słońca: %s"
 
-#: cppfiles/Weather95_20Main.cpp:279
+#: cppfiles/Weather95_20Main.cpp:287
 msgid "Sunrise: N/A"
-msgstr "Wschód słońca: N/W"
+msgstr "Wschód słońca: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:973 cppfiles/Weather95_20Main.cpp:1085
+#: cppfiles/Weather95_20Main.cpp:1116 cppfiles/Weather95_20Main.cpp:1213
 #, c-format
 msgid "Sunset: %s"
 msgstr "Zachód słońca: %s"
 
-#: cppfiles/Weather95_20Main.cpp:281
+#: cppfiles/Weather95_20Main.cpp:289
 msgid "Sunset: N/A"
-msgstr "Zachód słońca: N/W"
+msgstr "Zachód słońca: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:513
+#: cppfiles/Weather95_20Main.cpp:512
 msgid "Target file &encoding"
 msgstr "&Kodowanie pliku docelowego"
 
-#: cppfiles/Weather95_20Main.cpp:226
+#: cppfiles/Weather95_20Main.cpp:232
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: cppfiles/Weather95_20Main.cpp:475
-msgid "Temperature &unit"
-msgstr "&Jednostka temperatury"
-
-#: cppfiles/Weather95_20Main.cpp:1129
+#: cppfiles/Weather95_20Main.cpp:761
 msgid "Text documents (*.txt)|*.txt|All files (*.*)|*.*"
 msgstr "Dokumenty tekstowe (*.txt)|*.txt|Wszystkie pliki (*.*)|*.*"
 
-#: cppfiles/Weather95_20Main.cpp:1150
+#: cppfiles/Weather95_20Main.cpp:782
 msgid ""
 "The file has not been successfully written because diacritics of the "
 "currently used language in this program are not compatible with the encoding "
@@ -742,15 +606,14 @@ msgstr ""
 "Zmień język na inny (najbezpieczniejszym jest angielski) lub ustaw kodowanie "
 "docelowe na UTF-8."
 
-#: cppfiles/Weather95_20Main.cpp:820
+#: cppfiles/WeatherForecastRequestThread.cpp:73
 msgid ""
-"The target data document is not well-formed. Enter another search phrase or "
-"try again later."
+"The received data is corrupt. Enter another search phrase or try again later."
 msgstr ""
-"Docelowy dokument z danymi nie jest dobrze uformowany. Wprowadź inną szukaną "
-"frazę lub spróbuj ponownie później."
+"Odebrane dane są uszkodzone. Wprowadź inną szukaną frazę lub spróbuj "
+"ponownie później."
 
-#: cppfiles/Weather95_20Main.cpp:670
+#: cppfiles/Weather95_20Main.cpp:687
 msgid ""
 "This program is published under The MIT License. For more information, "
 "please refer to the Licence.txt file included with the application.\n"
@@ -761,151 +624,172 @@ msgid ""
 msgstr ""
 "Ten program jest publikowany na zasadach licencji MIT. Więcej informacji "
 "można uzyskać zapoznając się z plikiem Licence.txt dołączonym do aplikacji "
-"(polskie tłumaczenie licencji MIT: http://blaszyk-jarosinski.pl/wp-content/"
-"uploads/2008/05/licencja-mit-tlumaczenie.pdf).\n"
+"(polskie tłumaczenie licencji MIT: http://web.archive.org/web/20140801205530/"
+"http://blaszyk-jarosinski.pl/wp-content/uploads/2008/05/licencja-mit-"
+"tlumaczenie.pdf).\n"
 "\n"
 "Program ten zawiera również biblioteki, które są niezbędne do uruchomienia "
 "oprogramowania. Informacje licencyjne odnośnie nich znajdują się w katalogu "
 "Licences."
 
-#: cppfiles/Weather95_20Main.cpp:632
-msgid "Thundershowers"
-msgstr "Burze z deszczem"
-
-#: cppfiles/Weather95_20Main.cpp:591
-msgid "Thunderstorms"
-msgstr "Burze"
-
-#: cppfiles/Weather95_20Main.cpp:750
-msgid "Thursday"
-msgstr "czwartek"
-
-#: cppfiles/Weather95_20Main.cpp:461
+#: cppfiles/Weather95_20Main.cpp:460
 msgid "To &Clipboard\tCtrl+Alt+C"
 msgstr "Do &Schowka\tCtrl+Alt+C"
 
-#: cppfiles/Weather95_20Main.cpp:289 cppfiles/Weather95_20Main.cpp:976
+#: cppfiles/Weather95_20Main.cpp:318 cppfiles/Weather95_20Main.cpp:1228
 msgid "Today"
 msgstr "Dzisiaj"
 
-#: cppfiles/Weather95_20Main.cpp:321 cppfiles/Weather95_20Main.cpp:978
+#: cppfiles/Weather95_20Main.cpp:362 cppfiles/Weather95_20Main.cpp:1230
 msgid "Tomorrow"
 msgstr "Jutro"
 
-#: cppfiles/Weather95_20Main.cpp:587
-msgid "Tornado"
-msgstr "Trąba powietrzna"
+#: cppfiles/Weather95_20Main.cpp:1145 cppfiles/Weather95_20Main.cpp:1162
+#: cppfiles/Weather95_20Main.cpp:1179 cppfiles/Weather95_20Main.cpp:1247
+#: cppfiles/Weather95_20Main.cpp:1264 cppfiles/Weather95_20Main.cpp:1281
+#, c-format
+msgid "Total precipitation: %s"
+msgstr "Suma opadów deszczu: %s"
 
-#: cppfiles/Weather95_20Main.cpp:588
-msgid "Tropical storm"
-msgstr "Sztorm tropikalny"
+#: cppfiles/Weather95_20Main.cpp:355 cppfiles/Weather95_20Main.cpp:399
+#: cppfiles/Weather95_20Main.cpp:443
+msgid "Total precipitation: N/A"
+msgstr "Suma opadów deszczu: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:746
-msgid "Tuesday"
-msgstr "wtorek"
+#: cppfiles/Weather95_20Main.cpp:1147 cppfiles/Weather95_20Main.cpp:1164
+#: cppfiles/Weather95_20Main.cpp:1181 cppfiles/Weather95_20Main.cpp:1249
+#: cppfiles/Weather95_20Main.cpp:1266 cppfiles/Weather95_20Main.cpp:1283
+#, c-format
+msgid "Total snow: %s"
+msgstr "Suma opadów śniegu: %s"
 
-#: cppfiles/Weather95_20Main.cpp:758
-msgid "Unknown"
-msgstr "nieznany"
+#: cppfiles/Weather95_20Main.cpp:357 cppfiles/Weather95_20Main.cpp:401
+#: cppfiles/Weather95_20Main.cpp:445
+msgid "Total snow: N/A"
+msgstr "Suma opadów śniegu: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:738
+#: cppfiles/Weather95_20Main.cpp:1129 cppfiles/Weather95_20Main.cpp:1225
+#, c-format
+msgid "UV index: %s"
+msgstr "Indeks UV: %s"
+
+#: cppfiles/Weather95_20Main.cpp:309
+msgid "UV index: N/A"
+msgstr "Indeks UV: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:719
 msgid "Unknown date format"
 msgstr "Nieznany format daty"
 
-#: cppfiles/Weather95_20Main.cpp:965 cppfiles/Weather95_20Main.cpp:1076
+#: cppfiles/Weather95_20Main.cpp:643
+msgid "Unknown error."
+msgstr "Nieznany błąd."
+
+#: cppfiles/Weather95_20Main.cpp:1111 cppfiles/Weather95_20Main.cpp:1209
 #, c-format
 msgid "Visibility: %s"
 msgstr "Widoczność: %s"
 
-#: cppfiles/Weather95_20Main.cpp:265
+#: cppfiles/Weather95_20Main.cpp:277
 msgid "Visibility: N/A"
-msgstr "Widoczność: N/W"
+msgstr "Widoczność: N/D"
 
-#: cppfiles/Weather95_20Main.cpp:1038
+#: cppfiles/Weather95_20Main.cpp:1067
 msgid "WEATHER DETAILS"
 msgstr "SZCZEGÓŁY POGODY"
 
-#: cppfiles/Weather95_20Main.cpp:1087
+#: cppfiles/Weather95_20Main.cpp:1131
 msgid "WEATHER FORECAST"
 msgstr "PROGNOZA POGODY"
 
-#: cppfiles/Weather95_20Main.cpp:780
+#: cppfiles/Weather95_20Main.cpp:744
 msgid "Warning"
 msgstr "Ostrzeżenie"
 
-#: cppfiles/Weather95_20Main.cpp:211 cppfiles/Weather95_20Main.cpp:665
+#: cppfiles/Weather95_20Main.cpp:212 cppfiles/Weather95_20Main.cpp:682
 msgid "Weather 95+20"
 msgstr "Pogoda 95+20"
 
-#: cppfiles/Weather95_20Main.cpp:239 cppfiles/Weather95_20Main.cpp:317
-#: cppfiles/Weather95_20Main.cpp:349 cppfiles/Weather95_20Main.cpp:381
-#: cppfiles/Weather95_20Main.cpp:415 cppfiles/Weather95_20Main.cpp:447
+#: cppfiles/Weather95_20Main.cpp:245 cppfiles/Weather95_20Main.cpp:346
+#: cppfiles/Weather95_20Main.cpp:390 cppfiles/Weather95_20Main.cpp:434
 msgid "Weather condition"
 msgstr "Warunki pogodowe"
 
-#: cppfiles/Weather95_20Main.cpp:286
+#: cppfiles/Weather95_20Main.cpp:314
 msgid "Weather forecast"
 msgstr "Prognoza pogody"
 
-#: cppfiles/Weather95_20Main.cpp:748
-msgid "Wednesday"
-msgstr "środa"
+#: cppfiles/Weather95_20Main.cpp:639
+#, c-format
+msgid "WeatherAPI.com service error. Reason: %s"
+msgstr "Błąd usługi WeatherAPI.com. Powód: %s"
 
-#: cppfiles/Weather95_20Main.cpp:243
+#: cppfiles/Weather95_20Main.cpp:249
 msgid "Wind"
 msgstr "Wiatr"
 
-#: cppfiles/Weather95_20Main.cpp:611
-msgid "Windy"
-msgstr "Wietrznie"
+#: cppfiles/Weather95_20Main.cpp:1123 cppfiles/Weather95_20Main.cpp:1219
+#, c-format
+msgid "Wind chill: %s"
+msgstr "Chłód wiatru: %s"
 
-#: cppfiles/Weather95_20Main.cpp:487
+#: cppfiles/Weather95_20Main.cpp:303
+msgid "Wind chill: N/A"
+msgstr "Chłód wiatru: N/D"
+
+#: cppfiles/Weather95_20Main.cpp:486
 msgid "YYYY-DD-MM"
 msgstr "RRRR-DD-MM"
 
-#: cppfiles/Weather95_20Main.cpp:483
+#: cppfiles/Weather95_20Main.cpp:482
 msgid "YYYY-MM-DD"
 msgstr "RRRR-MM-DD"
 
-#: cppfiles/Weather95_20Main.cpp:495
+#: cppfiles/Weather95_20Main.cpp:494
 msgid "YYYY.DD.MM"
 msgstr "RRRR.DD.MM"
 
-#: cppfiles/Weather95_20Main.cpp:491
+#: cppfiles/Weather95_20Main.cpp:490
 msgid "YYYY.MM.DD"
 msgstr "RRRR.MM.DD"
 
-#: cppfiles/Weather95_20Main.cpp:503
+#: cppfiles/Weather95_20Main.cpp:502
 msgid "YYYY/DD/MM"
 msgstr "RRRR/DD/MM"
 
-#: cppfiles/Weather95_20Main.cpp:499
+#: cppfiles/Weather95_20Main.cpp:498
 msgid "YYYY/MM/DD"
 msgstr "RRRR/MM/DD"
 
-#: cppfiles/Weather95_20Main.cpp:780
+#: cppfiles/Weather95_20App.cpp:85
+msgid ""
+"You are using a version of Weather 95+20 that has an invalid API key for the "
+"WeatherAPI.com service. Please contact your software provider and ask for a "
+"valid build.\n"
+"\n"
+"The application will terminate now."
+msgstr ""
+"Używasz wersji programu Weather 95+20, która ma nieprawidłowy klucz API dla "
+"usługi WeatherAPI.com. Proszę skontaktować się ze swoim dostawcą "
+"oprogramowania po właściwą kompilację.\n"
+"\n"
+"Aplikacja zostanie teraz przerwana."
+
+#: cppfiles/Weather95_20Main.cpp:744
 msgid "You need to enter the desired location in order to proceed."
 msgstr "Aby kontynuować, należy wprowadzić pożądane położenie."
 
-#: cppfiles/Weather95_20Main.cpp:895
-msgid "falling"
-msgstr "spada"
+#: cppfiles/WeatherForecastRequestThread.cpp:50
+msgid "en"
+msgstr "pl"
 
-#: cppfiles/Weather95_20Main.cpp:669
-msgid "http://www.komputermania.pl.eu.org"
-msgstr "http://www.komputermania.pl.eu.org/pl"
-
-#: cppfiles/Weather95_20Main.cpp:897
-msgid "rising"
-msgstr "rośnie"
-
-#: cppfiles/Weather95_20Main.cpp:899
-msgid "steady"
-msgstr "stały"
+#: cppfiles/Weather95_20Main.cpp:686
+msgid "http://www.pecetfull.pl"
+msgstr "http://www.pecetfull.pl/pl"
 
 #: OK
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 #: Cancel
 msgid "&Cancel"
@@ -921,11 +805,11 @@ msgstr "Licencja"
 
 #: English
 msgid "English"
-msgstr "Angielski"
+msgstr "English"
 
 #: English (Canada)
 msgid "English (Canada)"
-msgstr "Angielski (Kanada)"
+msgstr "English (Canada)"
 
 #: Polish
 msgid "Polish"
@@ -933,11 +817,63 @@ msgstr "Polski"
 
 #: German
 msgid "German"
-msgstr "Niemiecki"
+msgstr "Deutsch"
 
-#: Earth
-msgid "Earth"
-msgstr "Ziemia"
+#: Monday
+msgid "Monday"
+msgstr "poniedziałek"
+
+#: Tuesday
+msgid "Tuesday"
+msgstr "wtorek"
+
+#: Wednesday
+msgid "Wednesday"
+msgstr "środa"
+
+#: Thursday
+msgid "Thursday"
+msgstr "czwartek"
+
+#: Friday
+msgid "Friday"
+msgstr "piątek"
+
+#: Saturday
+msgid "Saturday"
+msgstr "sobota"
+
+#: Sunday
+msgid "Sunday"
+msgstr "niedziela"
+
+#: in
+msgid "in"
+msgstr "in"
+
+#: km
+msgid "km"
+msgstr "km"
+
+#: kph
+msgid "kph"
+msgstr "km/h"
+
+#: mb
+msgid "mb"
+msgstr "hPa"
+
+#: miles
+msgid "miles"
+msgstr "mi"
+
+#: mm
+msgid "mm"
+msgstr "mm"
+
+#: mph
+msgid "mph"
+msgstr "mph"
 
 #: Afghanistan
 msgid "Afghanistan"
@@ -945,15 +881,11 @@ msgstr "Afganistan"
 
 #: Albania
 msgid "Albania"
-msgstr ""
+msgstr "Albania"
 
 #: Algeria
 msgid "Algeria"
-msgstr "Algieria"
-
-#: American Samoa
-msgid "American Samoa"
-msgstr "Samoa Amerykańskie"
+msgstr "Algeria"
 
 #: Andorra
 msgid "Andorra"
@@ -961,11 +893,11 @@ msgstr "Andora"
 
 #: Angola
 msgid "Angola"
-msgstr ""
+msgstr "Angola"
 
 #: Anguilla
 msgid "Anguilla"
-msgstr ""
+msgstr "Anguilla"
 
 #: Antarctica
 msgid "Antarctica"
@@ -981,19 +913,19 @@ msgstr "Argentyna"
 
 #: Armenia
 msgid "Armenia"
-msgstr ""
+msgstr "Armenia"
 
 #: Aruba
 msgid "Aruba"
-msgstr ""
+msgstr "Aruba"
 
 #: Australia
 msgid "Australia"
-msgstr ""
+msgstr "Australia"
 
 #: Austria
 msgid "Austria"
-msgstr ""
+msgstr "Austria"
 
 #: Azerbaijan
 msgid "Azerbaijan"
@@ -1013,7 +945,7 @@ msgstr "Bangladesz"
 
 #: Barbados
 msgid "Barbados"
-msgstr ""
+msgstr "Barbados"
 
 #: Belarus
 msgid "Belarus"
@@ -1025,11 +957,11 @@ msgstr "Belgia"
 
 #: Belize
 msgid "Belize"
-msgstr ""
+msgstr "Belize"
 
 #: Benin
 msgid "Benin"
-msgstr ""
+msgstr "Benin"
 
 #: Bermuda
 msgid "Bermuda"
@@ -1037,7 +969,7 @@ msgstr "Bermudy"
 
 #: Bhutan
 msgid "Bhutan"
-msgstr ""
+msgstr "Bhutan"
 
 #: Bolivia
 msgid "Bolivia"
@@ -1049,7 +981,7 @@ msgstr "Bośnia i Hercegowina"
 
 #: Botswana
 msgid "Botswana"
-msgstr ""
+msgstr "Botswana"
 
 #: Bouvet Island
 msgid "Bouvet Island"
@@ -1063,10 +995,6 @@ msgstr "Brazylia"
 msgid "British Indian Ocean Territory"
 msgstr "Brytyjskie Terytorium Oceanu Indyjskiego"
 
-#: British Virgin Islands
-msgid "British Virgin Islands"
-msgstr "Brytyjskie Wyspy Dziewicze"
-
 #: Brunei Darussalam
 msgid "Brunei Darussalam"
 msgstr "Brunei"
@@ -1077,11 +1005,11 @@ msgstr "Bułgaria"
 
 #: Burkina Faso
 msgid "Burkina Faso"
-msgstr ""
+msgstr "Burkina Faso"
 
 #: Burundi
 msgid "Burundi"
-msgstr ""
+msgstr "Burundi"
 
 #: Cambodia
 msgid "Cambodia"
@@ -1113,7 +1041,7 @@ msgstr "Czad"
 
 #: Chile
 msgid "Chile"
-msgstr ""
+msgstr "Chile"
 
 #: China
 msgid "China"
@@ -1139,16 +1067,16 @@ msgstr "Komory"
 msgid "Congo"
 msgstr "Kongo"
 
-#: Cook Islands
-msgid "Cook Islands"
-msgstr "Wyspy Cooka"
+#: Cook Island
+msgid "Cook Island"
+msgstr "Wyspa Cooka"
 
 #: Costa Rica
 msgid "Costa Rica"
 msgstr "Kostaryka"
 
-#: Côte d´Ivoire
-msgid "Côte d´Ivoire"
+#: Cote d'Ivoire
+msgid "Cote d'Ivoire"
 msgstr "Wybrzeże Kości Słoniowej"
 
 #: Croatia
@@ -1209,7 +1137,7 @@ msgstr "Erytrea"
 
 #: Estonia
 msgid "Estonia"
-msgstr ""
+msgstr "Estonia"
 
 #: Ethiopia
 msgid "Ethiopia"
@@ -1222,10 +1150,6 @@ msgstr "Falklandy"
 #: Faroe Islands
 msgid "Faroe Islands"
 msgstr "Wyspy Owcze"
-
-#: Federated States of Micronesia
-msgid "Federated States of Micronesia"
-msgstr "Mikronezja"
 
 #: Fiji
 msgid "Fiji"
@@ -1243,21 +1167,21 @@ msgstr "Francja"
 msgid "French Guiana"
 msgstr "Gujana Francuska"
 
-#: French Polynesia
-msgid "French Polynesia"
+#: French Polynesia Islands
+msgid "French Polynesia Islands"
 msgstr "Polinezja Francuska"
 
-#: French Southern Territories
-msgid "French Southern Territories"
+#: French Southern and Antarctic Lands
+msgid "French Southern and Antarctic Lands"
 msgstr "Francuskie Terytoria Południowe i Antarktyczne"
 
 #: Gabon
 msgid "Gabon"
-msgstr ""
+msgstr "Gabon"
 
 #: Gambia
 msgid "Gambia"
-msgstr ""
+msgstr "Gambia"
 
 #: Georgia
 msgid "Georgia"
@@ -1269,11 +1193,11 @@ msgstr "Niemcy"
 
 #: Ghana
 msgid "Ghana"
-msgstr ""
+msgstr "Ghana"
 
 #: Gibraltar
 msgid "Gibraltar"
-msgstr ""
+msgstr "Gibraltar"
 
 #: Greece
 msgid "Greece"
@@ -1285,7 +1209,7 @@ msgstr "Grenlandia"
 
 #: Grenada
 msgid "Grenada"
-msgstr ""
+msgstr "Grenada"
 
 #: Guadeloupe
 msgid "Guadeloupe"
@@ -1293,7 +1217,7 @@ msgstr "Gwadelupa"
 
 #: Guam
 msgid "Guam"
-msgstr ""
+msgstr "Guam"
 
 #: Guatemala
 msgid "Guatemala"
@@ -1313,7 +1237,7 @@ msgstr "Gujana"
 
 #: Haiti
 msgid "Haiti"
-msgstr ""
+msgstr "Haiti"
 
 #: Heard Island and McDonald Islands
 msgid "Heard Island and McDonald Islands"
@@ -1321,7 +1245,7 @@ msgstr "Wyspy Heard i McDonalda"
 
 #: Honduras
 msgid "Honduras"
-msgstr ""
+msgstr "Honduras"
 
 #: Hong Kong
 msgid "Hong Kong"
@@ -1345,7 +1269,7 @@ msgstr "Indonezja"
 
 #: Iran
 msgid "Iran"
-msgstr ""
+msgstr "Iran"
 
 #: Iraq
 msgid "Iraq"
@@ -1385,7 +1309,7 @@ msgstr "Kenia"
 
 #: Kiribati
 msgid "Kiribati"
-msgstr ""
+msgstr "Kiribati"
 
 #: Kuwait
 msgid "Kuwait"
@@ -1397,7 +1321,7 @@ msgstr "Kirgistan"
 
 #: Laos
 msgid "Laos"
-msgstr ""
+msgstr "Laos"
 
 #: Latvia
 msgid "Latvia"
@@ -1409,11 +1333,11 @@ msgstr "Liban"
 
 #: Lesotho
 msgid "Lesotho"
-msgstr ""
+msgstr "Lesotho"
 
 #: Liberia
 msgid "Liberia"
-msgstr ""
+msgstr "Liberia"
 
 #: Libya
 msgid "Libya"
@@ -1421,7 +1345,7 @@ msgstr "Libia"
 
 #: Liechtenstein
 msgid "Liechtenstein"
-msgstr ""
+msgstr "Liechtenstein"
 
 #: Lithuania
 msgid "Lithuania"
@@ -1437,7 +1361,7 @@ msgstr "Makau"
 
 #: Macedonia
 msgid "Macedonia"
-msgstr ""
+msgstr "Macedonia"
 
 #: Madagascar
 msgid "Madagascar"
@@ -1445,7 +1369,7 @@ msgstr "Madagaskar"
 
 #: Malawi
 msgid "Malawi"
-msgstr ""
+msgstr "Malawi"
 
 #: Malaysia
 msgid "Malaysia"
@@ -1457,11 +1381,11 @@ msgstr "Malediwy"
 
 #: Mali
 msgid "Mali"
-msgstr ""
+msgstr "Mali"
 
 #: Malta
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: Marshall Islands
 msgid "Marshall Islands"
@@ -1487,6 +1411,10 @@ msgstr "Majotta"
 msgid "Mexico"
 msgstr "Meksyk"
 
+#: Micronesia
+msgid "Micronesia"
+msgstr "Mikronezja"
+
 #: Moldova
 msgid "Moldova"
 msgstr "Mołdawia"
@@ -1497,7 +1425,7 @@ msgstr "Monako"
 
 #: Mongolia
 msgid "Mongolia"
-msgstr ""
+msgstr "Mongolia"
 
 #: Montenegro
 msgid "Montenegro"
@@ -1505,7 +1433,7 @@ msgstr "Czarnogóra"
 
 #: Montserrat
 msgid "Montserrat"
-msgstr ""
+msgstr "Montserrat"
 
 #: Morocco
 msgid "Morocco"
@@ -1521,15 +1449,15 @@ msgstr "Mjanma"
 
 #: Namibia
 msgid "Namibia"
-msgstr ""
+msgstr "Namibia"
 
 #: Nauru
 msgid "Nauru"
-msgstr ""
+msgstr "Nauru"
 
 #: Nepal
 msgid "Nepal"
-msgstr ""
+msgstr "Nepal"
 
 #: Netherlands
 msgid "Netherlands"
@@ -1553,15 +1481,15 @@ msgstr "Nikaragua"
 
 #: Niger
 msgid "Niger"
-msgstr ""
+msgstr "Niger"
 
 #: Nigeria
 msgid "Nigeria"
-msgstr ""
+msgstr "Nigeria"
 
 #: Niue
 msgid "Niue"
-msgstr ""
+msgstr "Niue"
 
 #: Norfolk Island
 msgid "Norfolk Island"
@@ -1581,15 +1509,15 @@ msgstr "Norwegia"
 
 #: Oman
 msgid "Oman"
-msgstr ""
+msgstr "Oman"
 
 #: Pakistan
 msgid "Pakistan"
-msgstr ""
+msgstr "Pakistan"
 
 #: Palau
 msgid "Palau"
-msgstr ""
+msgstr "Palau"
 
 #: Palestine
 msgid "Palestine"
@@ -1597,7 +1525,7 @@ msgstr "Palestyna"
 
 #: Panama
 msgid "Panama"
-msgstr ""
+msgstr "Panama"
 
 #: Papua New Guinea
 msgid "Papua New Guinea"
@@ -1609,7 +1537,7 @@ msgstr "Paragwaj"
 
 #: Peru
 msgid "Peru"
-msgstr ""
+msgstr "Peru"
 
 #: Philippines
 msgid "Philippines"
@@ -1617,19 +1545,23 @@ msgstr "Filipiny"
 
 #: Pitcairn
 msgid "Pitcairn"
-msgstr ""
+msgstr "Pitcairn"
 
 #: Poland
 msgid "Poland"
 msgstr "Polska"
 
+#: Polen (Poland)
+msgid "Polen"
+msgstr "Polska"
+
+#: Pologne (Poland)
+msgid "Pologne"
+msgstr "Polska"
+
 #: Portugal
 msgid "Portugal"
 msgstr "Portugalia"
-
-#: Puerto Rico
-msgid "Puerto Rico"
-msgstr "Portoryko"
 
 #: Qatar
 msgid "Qatar"
@@ -1637,7 +1569,7 @@ msgstr "Katar"
 
 #: Reunion
 msgid "Reunion"
-msgstr ""
+msgstr "Reunion"
 
 #: Romania
 msgid "Romania"
@@ -1649,11 +1581,19 @@ msgstr "Rosja"
 
 #: Rwanda
 msgid "Rwanda"
-msgstr ""
+msgstr "Rwanda"
+
+#: Saint Helena
+msgid "Saint Helena"
+msgstr "Wyspa Świętej Heleny"
 
 #: Saint Kitts and Nevis
 msgid "Saint Kitts and Nevis"
 msgstr "Saint Kitts i Nevis"
+
+#: Saint Lucia
+msgid "Saint Lucia"
+msgstr "Saint Lucia"
 
 #: Saint Pierre and Miquelon
 msgid "Saint Pierre and Miquelon"
@@ -1665,11 +1605,11 @@ msgstr "Saint Vincent i Grenadyny"
 
 #: Samoa
 msgid "Samoa"
-msgstr ""
+msgstr "Samoa"
 
 #: San Marino
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #: Sao Tome and Principe
 msgid "Sao Tome and Principe"
@@ -1681,11 +1621,11 @@ msgstr "Arabia Saudyjska"
 
 #: Senegal
 msgid "Senegal"
-msgstr ""
+msgstr "Senegal"
 
 #: Serbia
 msgid "Serbia"
-msgstr ""
+msgstr "Serbia"
 
 #: Seychelles
 msgid "Seychelles"
@@ -1693,7 +1633,7 @@ msgstr "Seszele"
 
 #: Sierra Leone
 msgid "Sierra Leone"
-msgstr ""
+msgstr "Sierra Leone"
 
 #: Singapore
 msgid "Singapore"
@@ -1713,14 +1653,14 @@ msgstr "Wyspy Salomona"
 
 #: Somalia
 msgid "Somalia"
-msgstr ""
+msgstr "Somalia"
 
 #: South Africa
 msgid "South Africa"
 msgstr "Republika Południowej Afryki"
 
-#: South Georgia and the Sandwich Islands
-msgid "South Georgia and the South Sandwich Islands"
+#: South Georgia and Sandwich Islands
+msgid "South Georgia and South Sandwich Islands"
 msgstr "Georgia Południowa i Sandwich Południowy"
 
 #: South Korea
@@ -1733,19 +1673,11 @@ msgstr "Hiszpania"
 
 #: Sri Lanka
 msgid "Sri Lanka"
-msgstr ""
-
-#: St Helena Ascension and Tristan da Cunha
-msgid "St Helena Ascension and Tristan da Cunha"
-msgstr "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha"
-
-#: St. Lucia
-msgid "St. Lucia"
-msgstr "Saint Lucia"
+msgstr "Sri Lanka"
 
 #: Sudan
 msgid "Sudan"
-msgstr ""
+msgstr "Sudan"
 
 #: Suriname
 msgid "Suriname"
@@ -1769,7 +1701,7 @@ msgstr "Szwajcaria"
 
 #: Syria
 msgid "Syria"
-msgstr ""
+msgstr "Syria"
 
 #: Taiwan
 msgid "Taiwan"
@@ -1781,7 +1713,7 @@ msgstr "Tadżykistan"
 
 #: Tanzania
 msgid "Tanzania"
-msgstr ""
+msgstr "Tanzania"
 
 #: Thailand
 msgid "Thailand"
@@ -1793,15 +1725,15 @@ msgstr "Timor Wschodni"
 
 #: Togo
 msgid "Togo"
-msgstr ""
+msgstr "Togo"
 
 #: Tokelau
 msgid "Tokelau"
-msgstr ""
+msgstr "Tokelau"
 
 #: Tonga
 msgid "Tonga"
-msgstr ""
+msgstr "Tonga"
 
 #: Trinidad and Tobago
 msgid "Trinidad and Tobago"
@@ -1817,7 +1749,7 @@ msgstr "Turcja"
 
 #: Turkmenistan
 msgid "Turkmenistan"
-msgstr ""
+msgstr "Turkmenistan"
 
 #: Turks and Caicos Islands
 msgid "Turks and Caicos Islands"
@@ -1825,11 +1757,11 @@ msgstr "Turks i Caicos"
 
 #: Tuvalu
 msgid "Tuvalu"
-msgstr ""
+msgstr "Tuvalu"
 
 #: Uganda
 msgid "Uganda"
-msgstr ""
+msgstr "Uganda"
 
 #: Ukraine
 msgid "Ukraine"
@@ -1843,29 +1775,21 @@ msgstr "Zjednoczone Emiraty Arabskie"
 msgid "United Kingdom"
 msgstr "Zjednoczone Królestwo"
 
-#: United States
-msgid "United States"
-msgstr "Stany Zjednoczone"
-
-#: United States Minor Outlying Islands
-msgid "United States Minor Outlying Islands"
-msgstr "Dalekie Wyspy Mniejsze Stanów Zjednoczonych"
+#: United States of America
+msgid "United States of America"
+msgstr "Stany Zjednoczone Ameryki"
 
 #: Uruguay
 msgid "Uruguay"
 msgstr "Urugwaj"
 
-#: US Virgin Islands
-msgid "US Virgin Islands"
-msgstr "Wyspy Dziewicze Stanów Zjednoczonych"
-
 #: Uzbekistan
 msgid "Uzbekistan"
-msgstr ""
+msgstr "Uzbekistan"
 
 #: Vanuatu
 msgid "Vanuatu"
-msgstr ""
+msgstr "Vanuatu"
 
 #: Vatican City
 msgid "Vatican City"
@@ -1878,6 +1802,10 @@ msgstr "Wenezuela"
 #: Vietnam
 msgid "Vietnam"
 msgstr "Wietnam"
+
+#: Virgin Islands
+msgid "Virgin Islands"
+msgstr "Wyspy Dziewicze"
 
 #: Wallis and Futuna
 msgid "Wallis and Futuna"
@@ -1893,8 +1821,48 @@ msgstr "Jemen"
 
 #: Zambia
 msgid "Zambia"
-msgstr ""
+msgstr "Zambia"
 
 #: Zimbabwe
 msgid "Zimbabwe"
-msgstr ""
+msgstr "Zimbabwe"
+
+#: New Moon
+msgid "New Moon"
+msgstr "Nów"
+
+#: Waxing Crescent
+msgid "Waxing Crescent"
+msgstr "Rosnący sierp"
+
+#: First Quarter
+msgid "First Quarter"
+msgstr "Pierwsza kwadra"
+
+#: Waxing Gibbous
+msgid "Waxing Gibbous"
+msgstr "Rosnący garb"
+
+#: Full Moon
+msgid "Full Moon"
+msgstr "Pełnia"
+
+#: Waning Gibbous
+msgid "Waning Gibbous"
+msgstr "Ubywający garb"
+
+#: Last Quarter
+msgid "Last Quarter"
+msgstr "Ostatnia kwadra"
+
+#: Waning Crescent
+msgid "Waning Crescent"
+msgstr "Ubywający sierp"
+
+#: No matching location found. (1006)
+msgid "No matching location found."
+msgstr "Nie znaleziono pasującej lokalizacji."
+
+#: API key is invalid. (2006)
+msgid "API key is invalid."
+msgstr "Klucz API jest nieprawidłowy."

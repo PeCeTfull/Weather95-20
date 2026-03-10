@@ -1,1 +1,1 @@
-xgettext cppfiles/* -d weathr95 -s --keyword=_ -p cppfiles/ -o weathr95.pot
+xgettext cppfiles/* -d weathr95 -s --keyword=_ -p cppfiles/ -o weathr95.pot --from-code=utf-8
