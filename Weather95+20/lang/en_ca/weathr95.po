@@ -34,3 +34,11 @@ msgstr "Deutsch"
 #: miles
 msgid "miles"
 msgstr "mi"
+
+#: Polen (Poland)
+msgid "Polen"
+msgstr "Poland"
+
+#: Pologne (Poland)
+msgid "Pologne"
+msgstr "Poland"
