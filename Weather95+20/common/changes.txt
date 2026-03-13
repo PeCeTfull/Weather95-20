@@ -1,0 +1,11 @@
+The changelog of Weather 95+20
+
+2.0 (2026-03-xx): 
+* performed complete code overhaul; 
+* switched data source from Yahoo Weather API to WeatherAPI.com; 
+* removed OpenSSL Library from the project to handle HTTP connections (backward compatibility); 
+* applied new weather details from WeatherAPI.com; 
+* shortened weather forecast from 5 to 3 days; 
+* updated language localisations.
+
+1.0 (2015-08-16) — first public release version.

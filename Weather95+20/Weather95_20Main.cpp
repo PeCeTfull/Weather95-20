@@ -1290,5 +1290,7 @@ void Weather95_20Frame::UpdateFrameWithReceivedData()
     SetSize(bestWidth - 1, bestHeight - 1);
     SetSize(bestWidth, bestHeight);
 
+    MainStatusBar->SetStatusText(locationStatus);
+
     this->Thaw();
 }

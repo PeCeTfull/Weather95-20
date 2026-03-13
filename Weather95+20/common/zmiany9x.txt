@@ -1,0 +1,11 @@
+Spis zmian programu Pogoda 95+20
+
+2.0 (xx.III.2026): 
+* przeprowadzono kompletn¹ przebudowê kodu; 
+* prze³¹czono Ÿród³o danych z us³ugi Yahoo Weather API do WeatherAPI.com; 
+* zdjêto bibliotekê OpenSSL z projektu, aby obs³ugiwaæ po³¹czenia HTTP (kompatybilnoœæ wsteczna); 
+* zastosowano nowe szczegó³y pogody z us³ugi WeatherAPI.com; 
+* skrócono prognozê pogody z 5 do 3 dni; 
+* zaktualizowano lokalizacje jêzykowe.
+
+1.0 (16.VIII.2015) — pierwsza publicznie wydana wersja.
