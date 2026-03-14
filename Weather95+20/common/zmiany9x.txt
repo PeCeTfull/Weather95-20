@@ -1,6 +1,6 @@
 Spis zmian programu Pogoda 95+20
 
-2.0 (xx.III.2026): 
+2.0 (14.III.2026): 
 * przeprowadzono kompletn¹ przebudowê kodu; 
 * prze³¹czono Ÿród³o danych z us³ugi Yahoo Weather API do WeatherAPI.com; 
 * zdjêto bibliotekê OpenSSL z projektu, aby obs³ugiwaæ po³¹czenia HTTP (kompatybilnoœæ wsteczna); 

@@ -1,6 +1,6 @@
 The changelog of Weather 95+20
 
-2.0 (2026-03-xx): 
+2.0 (2026-03-14): 
 * performed complete code overhaul; 
 * switched data source from Yahoo Weather API to WeatherAPI.com; 
 * removed OpenSSL Library from the project to handle HTTP connections (backward compatibility); 
