@@ -643,9 +643,7 @@ void Weather95_20Frame::ProcessResultFromWeatherForecastRequestThread(wxJSONValu
         wxMessageBox(_("Unknown error."), _("Error"), wxICON_HAND);
     }
 
-    CheckMenuItem->Enable(true);
-    LocationTextCtrl->Enable(true);
-    this->SetCursor(wxNullCursor);
+    EnableCheckAndResetCursor();
 }
 
 void Weather95_20Frame::ShowErrorMessageFromWeatherForecastRequestThread(wxString errorMessage)
@@ -660,9 +658,7 @@ void Weather95_20Frame::ShowErrorMessageFromWeatherForecastRequestThread(wxStrin
         wxMessageBox(errorMessage, _("Error"), wxICON_HAND);
     }
 
-    CheckMenuItem->Enable(true);
-    LocationTextCtrl->Enable(true);
-    this->SetCursor(wxNullCursor);
+    EnableCheckAndResetCursor();
 }
 
 void Weather95_20Frame::OnQuit(wxCommandEvent& event)
@@ -745,9 +741,7 @@ void Weather95_20Frame::OnCheck(wxCommandEvent& event)
         return;
     }
 
-    CheckMenuItem->Enable(false);
-    LocationTextCtrl->Enable(false);
-    this->SetCursor(wxCURSOR_ARROWWAIT);
+    DisableCheckAndSetWaitCursor();
 
     weatherForecastRequestThread = new WeatherForecastRequestThread(LocationTextCtrl->GetValue());
     weatherForecastRequestThread->mainFrame = this;
@@ -957,6 +951,22 @@ void Weather95_20Frame::DetermineMeasuringUnits()
     }
 }
 
+void Weather95_20Frame::DisableCheckAndSetWaitCursor()
+{
+    CheckMenuItem->Enable(false);
+    LocationTextCtrl->Enable(false);
+    this->SetCursor(wxCURSOR_ARROWWAIT);
+}
+
+void Weather95_20Frame::EnableCheckAndResetCursor()
+{
+    CheckMenuItem->Enable(true);
+    LocationTextCtrl->Enable(true);
+    this->SetCursor(wxNullCursor);
+    FocusOnDummyPanelAndClose();
+    LocationTextCtrl->SetFocus();
+}
+
 void Weather95_20Frame::EnableSave()
 {
     fileMenu->Enable(idMenuAsFile, true);
@@ -970,6 +980,13 @@ void Weather95_20Frame::EnsureTimeFormatForSunriseAndSunset()
         ConvertTo24HourClock(sunrise);
         ConvertTo24HourClock(sunset);
     }
+}
+
+void Weather95_20Frame::FocusOnDummyPanelAndClose()
+{
+    wxPanel* dummyPanel = new wxPanel(this, wxID_ANY);
+    dummyPanel->SetFocus();
+    dummyPanel->Close();
 }
 
 void Weather95_20Frame::ParseCurrentConditions(wxJSONValue& jsonRoot)
@@ -1289,8 +1306,6 @@ void Weather95_20Frame::UpdateFrameWithReceivedData()
     int bestHeight = windowSize.GetHeight();
     SetSize(bestWidth - 1, bestHeight - 1);
     SetSize(bestWidth, bestHeight);
-
-    MainStatusBar->SetStatusText(locationStatus);
 
     this->Thaw();
 }

@@ -62,8 +62,11 @@ class Weather95_20Frame: public wxFrame
 
         void ConvertLastUpdatedDate();
         void DetermineMeasuringUnits();
+        void DisableCheckAndSetWaitCursor();
+        void EnableCheckAndResetCursor();
         void EnableSave();
         void EnsureTimeFormatForSunriseAndSunset();
+        void FocusOnDummyPanelAndClose();
         void ParseCurrentConditions(wxJSONValue& jsonRoot);
         void ParseLocationDetails(wxJSONValue& jsonRoot);
         void ParseWeatherForecast(wxJSONValue& jsonRoot);

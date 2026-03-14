@@ -1,6 +1,6 @@
 Weather 95+20 2.0
 Author: PeCeT_full
-Website: http://www.komputermania.pl.eu.org
+Website: http://www.pecetfull.pl
 Copyright (c) by PeCeT_full 2015-2026. Weather 95+20 is published under The MIT License. For more information, please refer to Licence.txt included with the application.
 
 If there are any problems or doubts, please contact me.
@@ -44,3 +44,9 @@ Weather 95+20 allows you to adjust the following settings:
 * Language – you can switch current interface language to a desirable one.
 
 Make sure that you save new settings before exiting the application if you do not want to lose them.
+
+------------
+Known issues
+------------
+
+WeatherAPI.com has issues with finding some towns after entering their valid name with diacritical marks, e.g. Tarancón in Spain. In such a case, you should try the name without diacritical marks – for Tarancón, it will be "Tarancon".

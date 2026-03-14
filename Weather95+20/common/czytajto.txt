@@ -1,6 +1,6 @@
 ﻿Pogoda 95+20 (Weather 95+20) 2.0
 Autor: PeCeT_full
-Strona WWW: http://www.komputermania.pl.eu.org/pl
+Strona WWW: http://www.pecetfull.pl/pl
 Copyright © by PeCeT_full 2015-2026. Program Pogoda 95+20 jest publikowany na zasadach licencji MIT. Więcej informacji można uzyskać zapoznając się z plikiem Licence.txt dołączonym do aplikacji (polskie tłumaczenie licencji MIT: http://blaszyk-jarosinski.pl/wp-content/uploads/2008/05/licencja-mit-tlumaczenie.pdf).
 
 W razie wszelkich problemów czy też wątpliwości proszę o kontakt.
@@ -44,3 +44,9 @@ Program Pogoda 95+20 pozwala nam na dostosowanie następujących ustawień:
 * Język – można przełączyć z obecnego języka interfejsu na jeden z pożądanych.
 
 Upewnij się, że zapisałeś nowe ustawienia przed zakończeniem działania aplikacji, jeżeli nie chcesz ich stracić.
+
+--------------
+Znane problemy
+--------------
+
+WeatherAPI.com ma problemy z odnajdywaniem niektórych miejscowości po wpisaniu ich prawidłowej nazwy ze znakami diakrytycznymi, np. Łódź. W takim wypadku należy spróbować nazwy bez diakrytyków – w przypadku Łodzi będzie to „Lodz”.

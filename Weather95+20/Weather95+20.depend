@@ -2262,7 +2262,7 @@
 
 1186411252 d:\wxwidgets-2.8.12\include\wx\msw\rcdefs.h
 
-1773083856 source:c:\users\mateusz\codebase\weather95-20\weather95+20\src\configfile.cpp
+1773419198 source:c:\users\mateusz\codebase\weather95-20\weather95+20\src\configfile.cpp
 	"ConfigFile.h"
 	"../Weather95_20App.h"
 	<wx/wfstream.h>
@@ -4180,7 +4180,7 @@
 	"DevConfig.h"
 	<wx/app.h>
 
-1770755904 c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.h
+1773495988 c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.h
 	"include/wx/jsonreader.h"
 	<wx/clipbrd.h>
 	<wx/sizer.h>
@@ -4210,7 +4210,7 @@
 	"wx/module.h"
 	"wx/dataobj.h"
 
-1773416791 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.cpp
+1773491597 source:c:\users\mateusz\codebase\weather95-20\weather95+20\weather95_20main.cpp
 	"Weather95_20Main.h"
 	"Weather95_20App.h"
 	"ConfigFile.h"

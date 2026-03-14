@@ -16,7 +16,7 @@ Note: In Windows 9x operating systems, you may experience problems with copying 
 
 Weather 95+20 allows you to adjust the following settings: 
 
-* Temperature unit – both Celsius and Fahrenheit are supported. This option also changes the units of distance (km or mi), pressure (mb or in) and wind speed (kph or mph) depending on the selected option.
+* Measuring units – both metric and imperial are supported. This option changes the units of temperature (Celsius or Fahrenheit degrees), pressure (mb or in), precipitation (mm or in), distance (km or mi) and wind speed (kph or mph) depending on the selected option.
 
 * Time format – you can set the clock to be of 12-hour format (AM/PM) or 24-hour.
 
@@ -27,6 +27,10 @@ Weather 95+20 allows you to adjust the following settings:
 * Language – you can switch current interface language to a desirable one.
 
 Make sure that you save new settings before exiting the application if you do not want to lose them.
+
+### Known issues ###
+
+WeatherAPI.com has issues with finding some towns after entering their valid name with diacritical marks, e.g. Tarancón in Spain. In such a case, you should try the name without diacritical marks – for Tarancón, it will be "Tarancon".
 
 ### Recommended programming setup ###
 
