@@ -1,15 +1,16 @@
 /***************************************************************
  * Name:      Weather95_20Main.h
  * Purpose:   Defines Application Frame
- * Author:    PeCeT_full (pecetfull@komputermania.pl.eu.org)
+ * Author:    PeCeT_full (me@pecetfull.pl)
  * Created:   2015-07-19
- * Copyright: PeCeT_full (http://www.komputermania.pl.eu.org/)
+ * Copyright: PeCeT_full (http://www.pecetfull.pl/)
  * Licence:   The MIT License
  **************************************************************/
 
 #ifndef WEATHER95_20MAIN_H
 #define WEATHER95_20MAIN_H
 
+#include "include/wx/jsonreader.h"
 #include <wx/clipbrd.h>
 
 //(*Headers(Weather95_20Frame)
@@ -28,15 +29,16 @@ class Weather95_20Frame: public wxFrame
 
         Weather95_20Frame(wxWindow* parent,wxWindowID id = -1);
         virtual ~Weather95_20Frame();
+        void ProcessResultFromWeatherForecastRequestThread(wxJSONValue jsonRoot);
+        void ShowErrorMessageFromWeatherForecastRequestThread(wxString errorMessage);
 
     private:
 
         void OnCheck(wxCommandEvent& event);
-        wxString PrintWeatherDetails();
         void OnSaveAsFile(wxCommandEvent& event);
         void OnSaveToClipboard(wxCommandEvent& event);
-        void OnCelsius(wxCommandEvent& event);
-        void OnFahrenheit(wxCommandEvent& event);
+        void OnImperial(wxCommandEvent& event);
+        void OnMetric(wxCommandEvent& event);
         void OnANSI(wxCommandEvent& event);
         void OnUTF8(wxCommandEvent& event);
         void On12HourClock(wxCommandEvent& event);
@@ -57,7 +59,21 @@ class Weather95_20Frame: public wxFrame
         void OnChangeLanguage(wxCommandEvent& event);
         void OnLeftDown(wxMouseEvent& event);
         void OnLogoPanelLeftDown(wxMouseEvent& event);
-        wxMenu *mainMenu;
+
+        void ConvertLastUpdatedDate();
+        void DetermineMeasuringUnits();
+        void DisableCheckAndSetWaitCursor();
+        void EnableCheckAndResetCursor();
+        void EnableSave();
+        void EnsureTimeFormatForSunriseAndSunset();
+        void FocusOnDummyPanelAndClose();
+        void ParseCurrentConditions(wxJSONValue& jsonRoot);
+        void ParseLocationDetails(wxJSONValue& jsonRoot);
+        void ParseWeatherForecast(wxJSONValue& jsonRoot);
+        wxString PrintWeatherDetails();
+        void UpdateFrameWithReceivedData();
+
+        wxMenu *fileMenu;
         wxClipboard *systemClipboard = new wxClipboard();
         wxString locationStatus = _("Please type the location and hit Enter.");
 
@@ -68,50 +84,65 @@ class Weather95_20Frame: public wxFrame
         wxString location; // "[city_name], [country_name]"
         wxString latitude;
         wxString longitude;
-        wxString lastBuildDate;
+        wxString lastUpdated;
 
         // weather units
         wxString temperatureUnit;
-        wxString distanceUnit;
-        wxString pressureUnit;
         wxString speedUnit;
+        wxString pressureUnit;
+        wxString precipitationUnit;
+        wxString distanceUnit;
 
         // current conditions
         wxString currentTemperature;
         wxString currentCondition;
-        wxString windChill;
         wxString windDirection;
         wxString windSpeed;
-        wxString humidity;
+        wxString windGust;
         wxString pressure;
-        wxString rising;
+        wxString precipitation;
+        wxString humidity;
+        wxString cloudCover;
         wxString visibility;
-
-        // astronomy stuff
         wxString sunrise;
         wxString sunset;
+        wxString moonPhase;
+        wxString feelsLike;
+        wxString windChill;
+        wxString heatIndex;
+        wxString dewPoint;
+        wxString uvIndex;
 
         // weather forecast
         wxString todayWeekDay;
         wxString todayTempMin;
         wxString todayTempMax;
         wxString todayCondition;
+        wxString todayMaxWind;
+        wxString todayChanceOfRain;
+        wxString todayChanceOfSnow;
+        wxString todayTotalPrecipitation;
+        wxString todayTotalSnow;
+
         wxString tomorrowWeekDay;
         wxString tomorrowTempMin;
         wxString tomorrowTempMax;
         wxString tomorrowCondition;
+        wxString tomorrowMaxWind;
+        wxString tomorrowChanceOfRain;
+        wxString tomorrowChanceOfSnow;
+        wxString tomorrowTotalPrecipitation;
+        wxString tomorrowTotalSnow;
+
         wxString thirdDayWeekDay;
         wxString thirdDayTempMin;
         wxString thirdDayTempMax;
         wxString thirdDayCondition;
-        wxString fourthDayWeekDay;
-        wxString fourthDayTempMin;
-        wxString fourthDayTempMax;
-        wxString fourthDayCondition;
-        wxString fifthDayWeekDay;
-        wxString fifthDayTempMin;
-        wxString fifthDayTempMax;
-        wxString fifthDayCondition;
+        wxString thirdDayMaxWind;
+        wxString thirdDayChanceOfRain;
+        wxString thirdDayChanceOfSnow;
+        wxString thirdDayTotalPrecipitation;
+        wxString thirdDayTotalSnow;
 
         //(*Handlers(Weather95_20Frame)
         void OnQuit(wxCommandEvent& event);
@@ -129,55 +160,63 @@ class Weather95_20Frame: public wxFrame
         static const long ID_CURRENTTEMPERATURESTATICTEXT;
         static const long ID_CURRENTWEATHERCONDITIONSTATICTEXT;
         static const long ID_WINDSTATICTEXT;
-        static const long ID_CHILLSTATICTEXT;
         static const long ID_DIRECTIONSTATICTEXT;
         static const long ID_SPEEDSTATICTEXT;
+        static const long ID_GUSTSTATICTEXT;
         static const long ID_ATMOSPHERESTATICTEXT;
-        static const long ID_HUMIDITYSTATICTEXT;
-        static const long ID_VISIBILITYSTATICTEXT;
         static const long ID_PRESSURESTATICTEXT;
-        static const long ID_RISINGSTATICTEXT;
+        static const long ID_PRECIPITATIONSTATICTEXT;
+        static const long ID_HUMIDITYSTATICTEXT;
+        static const long ID_CLOUDCOVERSTATICTEXT;
+        static const long ID_VISIBILITYSTATICTEXT;
         static const long ID_ASTRONOMYSTATICTEXT;
         static const long ID_SUNRISESTATICTEXT;
         static const long ID_SUNSETSTATICTEXT;
+        static const long ID_MOONPHASESTATICTEXT;
+        static const long ID_INDEXSTATICTEXT;
+        static const long ID_FEELSLIKESTATICTEXT;
+        static const long ID_WINDCHILLSTATICTEXT;
+        static const long ID_HEATINDEXSTATICTEXT;
+        static const long ID_DEWPOINTSTATICTEXT;
+        static const long ID_UVINDEXSTATICTEXT;
         static const long ID_TODAYSTATICTEXT;
-        static const long ID_MAXTEMPSTATICTEXT1;
-        static const long ID_CURRENTMAXTEMPSTATICTEXT1;
-        static const long ID_MINTEMPSTATICTEXT1;
         static const long ID_CURRENTMINTEMPSTATICTEXT1;
+        static const long ID_DASHSTATICTEXT1;
+        static const long ID_CURRENTMAXTEMPSTATICTEXT1;
         static const long ID_WEATHERCONDITIONSTATICTEXT1;
+        static const long ID_MAXWINDSTATICTEXT1;
+        static const long ID_CHANCEOFRAINSTATICTEXT1;
+        static const long ID_CHANCEOFSNOWSTATICTEXT1;
+        static const long ID_TOTALPRECIPITATIONSTATICTEXT1;
+        static const long ID_TOTALSNOWSTATICTEXT1;
         static const long ID_TOMORROWSTATICTEXT;
-        static const long IID_MAXTEMPSTATICTEXT2;
-        static const long ID_CURRENTMAXTEMPSTATICTEXT2;
-        static const long ID_MINTEMPSTATICTEXT2;
         static const long ID_CURRENTMINTEMPSTATICTEXT2;
+        static const long ID_DASHSTATICTEXT2;
+        static const long ID_CURRENTMAXTEMPSTATICTEXT2;
         static const long ID_WEATHERCONDITIONSTATICTEXT2;
+        static const long ID_MAXWINDSTATICTEXT2;
+        static const long ID_CHANCEOFRAINSTATICTEXT2;
+        static const long ID_CHANCEOFSNOWSTATICTEXT2;
+        static const long ID_TOTALPRECIPITATIONSTATICTEXT2;
+        static const long ID_TOTALSNOWSTATICTEXT2;
         static const long ID_THIRDDAYSTATICTEXT;
-        static const long ID_MAXTEMPSTATICTEXT3;
-        static const long ID_CURRENTMAXTEMPSTATICTEXT3;
-        static const long ID_MINTEMPSTATICTEXT3;
         static const long ID_CURRENTMINTEMPSTATICTEXT3;
+        static const long ID_DASHSTATICTEXT3;
+        static const long ID_CURRENTMAXTEMPSTATICTEXT3;
         static const long ID_WEATHERCONDITIONSTATICTEXT3;
-        static const long ID_FOURTHDAYSTATICTEXT;
-        static const long ID_MAXTEMPSTATICTEXT4;
-        static const long ID_CURRENTMAXTEMPSTATICTEXT4;
-        static const long ID_MINTEMPSTATICTEXT4;
-        static const long ID_CURRENTMINTEMPSTATICTEXT4;
-        static const long ID_WEATHERCONDITIONSTATICTEXT4;
-        static const long ID_FIFTHTHDAYSTATICTEXT;
-        static const long ID_MAXTEMPSTATICTEXT5;
-        static const long ID_CURRENTMAXTEMPSTATICTEXT5;
-        static const long ID_MINTEMPSTATICTEXT5;
-        static const long ID_CURRENTMINTEMPSTATICTEXT5;
-        static const long ID_WEATHERCONDITIONSTATICTEXT5;
+        static const long ID_MAXWINDSTATICTEXT3;
+        static const long ID_CHANCEOFRAINSTATICTEXT3;
+        static const long ID_CHANCEOFSNOWSTATICTEXT3;
+        static const long ID_TOTALPRECIPITATIONSTATICTEXT3;
+        static const long ID_TOTALSNOWSTATICTEXT3;
         static const long idMenuCheck;
         static const long idMenuAsFile;
         static const long idMenuToClipboard;
         static const long idMenuSave;
         static const long idMenuQuit;
-        static const long idMenuCelsius;
-        static const long idMenuFahrenheit;
-        static const long idMenuTemperatureUnit;
+        static const long idMenuImperial;
+        static const long idMenuMetric;
+        static const long idMenuMeasuringUnits;
         static const long idMenu12HourClock;
         static const long idMenu24HourClock;
         static const long idMenuTimeFormat;
@@ -200,88 +239,96 @@ class Weather95_20Frame: public wxFrame
         static const long idMenuChangeLanguage;
         static const long idMenuSaveSettings;
         static const long idMenuAbout;
-        static const long ID_STATUSBAR1;
+        static const long ID_MAINSTATUSBAR;
         //*)
 
         //(*Declarations(Weather95_20Frame)
-        wxStaticText* MaxTempStaticText5;
+        wxStatusBar* MainStatusBar;
         wxStaticText* CurrentMaxTempStaticText1;
-        wxMenuItem* MenuItem8;
-        wxStaticText* CurrentMaxTempStaticText5;
-        wxStaticText* CurrentMinTempStaticText4;
+        wxMenu* MeasuringUnitsMenuItem;
+        wxStaticText* MaxWindStaticText1;
+        wxStaticText* MoonPhaseStaticText;
+        wxMenuItem* TwentyFourHourMenuItem;
+        wxStaticText* ChanceOfRainStaticText3;
         wxStaticText* DirectionStaticText;
-        wxMenuItem* MenuItem26;
         wxStaticText* TomorrowStaticText;
         wxPanel* LogoPanel;
-        wxMenuItem* MenuItem25;
+        wxMenuItem* DateFormat11MenuItem;
+        wxMenu* TargetFileEncodingMenuItem;
         wxStaticText* CurrentMinTempStaticText2;
+        wxStaticText* PrecipitationStaticText;
         wxStaticText* CurrentMaxTempStaticText2;
+        wxStaticText* FeelsLikeStaticText;
         wxStaticText* HumidityStaticText;
-        wxMenuItem* MenuItem5;
-        wxStaticText* CurrentMaxTempStaticText4;
-        wxMenu* MenuItem15;
+        wxStaticText* TotalPrecipitationStaticText3;
+        wxStaticText* ChanceOfSnowStaticText3;
+        wxStaticText* DewPointStaticText;
         wxStaticText* CurrentMaxTempStaticText3;
         wxStaticText* AtmosphereStaticText;
-        wxMenu* Menu3;
         wxStaticText* WindStaticText;
-        wxStaticText* MinTempStaticText3;
-        wxMenuItem* MenuItem14;
-        wxMenuItem* MenuItem11;
-        wxStaticText* MinTempStaticText4;
-        wxMenuItem* MenuItem29;
-        wxMenu* MenuItem4;
+        wxMenuItem* UTF8MenuItem;
+        wxStaticText* ChanceOfRainStaticText1;
+        wxMenuItem* DateFormat6MenuItem;
+        wxMenu* OptionsMenu;
+        wxStaticText* MaxWindStaticText3;
+        wxStaticText* TotalSnowStaticText2;
+        wxMenuItem* ANSIMenuItem;
+        wxMenuItem* DateFormat9MenuItem;
+        wxStaticText* MaxWindStaticText2;
+        wxStaticText* ChanceOfRainStaticText2;
+        wxStaticText* DashStaticText3;
         wxStaticText* CurrentMinTempStaticText3;
-        wxMenu* MenuItem10;
-        wxMenuItem* MenuItem22;
+        wxMenuItem* MetricMenuItem;
+        wxMenuItem* ImperialMenuItem;
         wxStaticText* TemperatureStaticText;
-        wxMenuItem* MenuItem17;
+        wxMenuItem* DateFormat10MenuItem;
+        wxStaticText* TotalPrecipitationStaticText1;
         wxStaticText* CurrentMinTempStaticText1;
-        wxMenuItem* MenuItem13;
-        wxStaticText* FifthDayStaticText;
-        wxStaticText* MinTempStaticText5;
-        wxStaticText* MaxTempStaticText4;
-        wxMenu* MenuItem7;
-        wxMenuItem* MenuItem12;
-        wxMenuItem* MenuItem24;
-        wxMenuItem* MenuItem27;
+        wxMenuItem* TwelveHourClockMenuItem;
+        wxMenu* DateFormatMenuItem;
+        wxStaticText* CloudCoverStaticText;
+        wxMenu* TimeFormatMenuItem;
+        wxStaticText* TotalSnowStaticText3;
+        wxMenuItem* CheckMenuItem;
         wxStaticText* SpeedStaticText;
-        wxMenuItem* MenuItem3;
-        wxMenuItem* MenuItem20;
+        wxMenuItem* DateFormat4MenuItem;
+        wxStaticText* DashStaticText2;
+        wxStaticText* ChanceOfSnowStaticText2;
         wxStaticText* WeatherConditionStaticText2;
-        wxMenuItem* MenuItem28;
+        wxMenuItem* DateFormat7MenuItem;
         wxStaticText* WeatherConditionStaticText3;
+        wxStaticText* ChanceOfSnowStaticText1;
         wxStaticText* PressureStaticText;
-        wxStaticText* ChillStaticText;
-        wxStaticText* WeatherConditionStaticText5;
-        wxStatusBar* StatusBar1;
-        wxStaticText* MaxTempStaticText3;
-        wxMenuItem* MenuItem6;
-        wxStaticText* MinTempStaticText2;
-        wxMenuItem* MenuItem23;
+        wxMenuItem* AsFileMenuItem;
+        wxStaticText* HeatIndexStaticText;
+        wxStaticText* UvIndexStaticText;
+        wxMenuItem* ChangeLanguageMenuItem;
+        wxMenuItem* ToClipboardMenuItem;
+        wxStaticText* GustStaticText;
+        wxStaticText* DashStaticText1;
+        wxStaticText* TotalSnowStaticText1;
         wxStaticText* ThirdDayStaticText;
-        wxStaticText* RisingStaticText;
+        wxMenuItem* DateFormat12MenuItem;
         wxStaticText* SunsetStaticText;
         wxStaticText* CurrentWeatherConditionStaticText;
-        wxStaticText* CurrentMinTempStaticText5;
-        wxStaticText* FourthDayStaticText;
+        wxStaticText* TotalPrecipitationStaticText2;
+        wxMenuItem* DateFormat1MenuItem;
         wxStaticText* VisibilityStaticText;
-        wxMenuItem* MenuItem21;
         wxStaticText* CurrentTemperatureStaticText;
-        wxStaticText* MaxTempStaticText2;
-        wxMenuItem* MenuItem16;
-        wxStaticText* MinTempStaticText1;
-        wxMenuItem* MenuItem9;
+        wxMenuItem* DateFormat8MenuItem;
+        wxMenuItem* DateFormat2MenuItem;
         wxStaticText* LocationStaticText;
-        wxMenu* MenuItem18;
-        wxStaticText* WeatherConditionStaticText4;
         wxStaticText* SunriseStaticText;
-        wxMenuItem* MenuItem30;
+        wxStaticText* WindChillStaticText;
+        wxMenuItem* DateFormat5MenuItem;
         wxStaticText* WeatherConditionStaticText1;
         wxStaticText* TodayStaticText;
+        wxMenuItem* SaveSettingsMenuItem;
+        wxMenuItem* DateFormat3MenuItem;
+        wxStaticText* IndexStaticText;
         wxStaticText* AstronomyStaticText;
         wxTextCtrl* LocationTextCtrl;
-        wxStaticText* MaxTempStaticText1;
-        wxMenuItem* MenuItem19;
+        wxMenu* SaveMenuItem;
         //*)
 
         DECLARE_EVENT_TABLE()

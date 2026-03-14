@@ -1,0 +1,6 @@
+#ifndef DEVCONFIG_H
+#define DEVCONFIG_H
+
+#define API_SERVICE_KEY "CHANGE_ME"
+
+#endif // DEVCONFIG_H

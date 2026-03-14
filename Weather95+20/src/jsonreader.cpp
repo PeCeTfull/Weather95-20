@@ -18,6 +18,7 @@
 #include <wx/sstream.h>
 #include <wx/debug.h>
 #include <wx/log.h>
+#include <wx/intl.h>
 
 
 
@@ -1482,7 +1483,9 @@ wxJSONReader::ReadValue( wxInputStream& is, int ch, wxJSONValue& val )
     }
 
     if ( tDouble )    {
-        r = s.ToDouble( &d );
+        wxString sDecLoc = LocaliseDecimalFractionCharacter(s);
+        r = sDecLoc.ToDouble( &d );
+        wxGetTranslation(s);
         wxLogTrace( traceMask, _T("(%s) convert to double result=%d"),
                  __PRETTY_FUNCTION__, r );
         if ( r )  {
@@ -2122,6 +2125,18 @@ wxJSONReader::DoStrto_ll( const wxString& str, wxUint64* ui64, wxChar* sign )
 }
 
 #endif       // defined( wxJSON_64BIT_INT )
+
+wxString
+wxJSONReader::LocaliseDecimalFractionCharacter( wxString stringToLocalise )
+{
+    wxString decimalFractionChar = _("DEC_FRACTION_DOT");
+    if (decimalFractionChar == wxT("DEC_FRACTION_COMMA"))
+    {
+        stringToLocalise.Replace(wxT("."), wxT(","));
+    }
+
+    return stringToLocalise;
+}
 
 /*
 {

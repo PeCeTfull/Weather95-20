@@ -1,4 +1,5 @@
 #include "ConfigFile.h"
+#include "../Weather95_20App.h"
 #include <wx/wfstream.h>
 #include <wx/sstream.h>
 #include <wx/intl.h>
@@ -6,48 +7,49 @@
 ConfigFile::ConfigFile()
 {
     //ctor
+    m_Config = new wxFileConfig(wxT("Weather95-20"), wxEmptyString, wxGetCwd() + '\\' + configFileName, wxEmptyString, wxCONFIG_USE_LOCAL_FILE);
 }
 
-wxString *ConfigFile::ReadFileContents()
+void ConfigFile::SaveConfiguration()
 {
-    wxString *contents = new wxString[PARAMS_AMOUNT];
-    wxString content;
-    wxFileInputStream file(configFileName);
-    wxStringOutputStream sOutput(&content);
-    sOutput.Write(file);
-    sOutput.Close();
+    m_Config->Write(wxT("/Weather95-20/LanguageID"), wxLANGUAGE_ENGLISH_CANADA);
+    m_Config->Write(wxT("/Weather95-20/TemperatureUnit"), wxT("C"));
+    m_Config->Write(wxT("/Weather95-20/24HourTimeFormat"), true);
+    m_Config->Write(wxT("/Weather95-20/DateFormatVariant"), 1);
+    m_Config->Write(wxT("/Weather95-20/UseUTF8"), false);
 
-    size_t newLinePos;
-    for(int i = 0; i < PARAMS_AMOUNT; i++)
+    m_Config->Flush();
+}
+
+void ConfigFile::SaveConfiguration(short languageID, wxString temperatureUnit, bool twentyFourHourTimeFormat, short dateFormatVariant, bool useUTF8)
+{
+    m_Config->Write(wxT("/Weather95-20/LanguageID"), languageID);
+    m_Config->Write(wxT("/Weather95-20/TemperatureUnit"), temperatureUnit.Upper());
+    m_Config->Write(wxT("/Weather95-20/24HourTimeFormat"), twentyFourHourTimeFormat);
+    m_Config->Write(wxT("/Weather95-20/DateFormatVariant"), dateFormatVariant);
+    m_Config->Write(wxT("/Weather95-20/UseUTF8"), useUTF8);
+
+    m_Config->Flush();
+}
+
+void ConfigFile::LoadConfiguration()
+{
+    wxGetApp().languageID = m_Config->Read(wxT("/Weather95-20/LanguageID"), wxLANGUAGE_ENGLISH_CANADA);
+
+    wxGetApp().userTemperatureUnit = m_Config->Read(wxT("/Weather95-20/TemperatureUnit"), wxT("C"));
+    wxGetApp().userTemperatureUnit.MakeLower();
+    if(wxGetApp().userTemperatureUnit != wxT('c') && wxGetApp().userTemperatureUnit != wxT('f'))
     {
-        newLinePos = content.Find(wxT("\r\n"));
-        contents[i] = content.SubString(0, newLinePos - 1);
-        content = content.SubString(newLinePos + 2, content.Length());
+        wxGetApp().userTemperatureUnit = wxT('c');
     }
 
-    return contents;
-}
+    wxString user24HourTimeFormatStr = m_Config->Read(wxT("/Weather95-20/24HourTimeFormat"), wxT("1"));
+    wxGetApp().user24HourTimeFormat = user24HourTimeFormatStr.Trim() == wxT("1");
 
-void ConfigFile::SaveFile(wxString& params)
-{
-    wxStringInputStream sInput(params);
-    wxFileOutputStream file(configFileName);
-    file.Write(sInput);
-    file.Close();
-}
+    wxGetApp().userDateFormatVariant = m_Config->Read(wxT("/Weather95-20/DateFormatVariant"), 1);
 
-void ConfigFile::NewFileContents()
-{
-    wxString params = wxString::Format(wxT("%s\r\n%s%d\r\n%s%s\r\n%s%d\r\n%s%d\r\n%s%d"), wxT(FILE_HEADER), wxT(PARAM_1), wxLANGUAGE_ENGLISH_CANADA, wxT(PARAM_2), wxT(PARAM_2_DEFAULT_VALUE), wxT(PARAM_3), PARAM_3_DEFAULT_VALUE, wxT(PARAM_4), PARAM_4_DEFAULT_VALUE, wxT(PARAM_5), PARAM_5_DEFAULT_VALUE);
-
-    SaveFile(params);
-}
-
-void ConfigFile::WriteFileContents(wxString* paramTable)
-{
-    wxString params = paramTable[0] + wxT("\r\n") + paramTable[1] + wxT("\r\n") + paramTable[2] + wxT("\r\n") + paramTable[3] + wxT("\r\n") + paramTable[4]+ wxT("\r\n") + paramTable[5];
-
-    SaveFile(params);
+    wxString userUseUTF8Str = m_Config->Read(wxT("/Weather95-20/UseUTF8"), wxT("0"));
+    wxGetApp().userUseUTF8 = userUseUTF8Str.Trim() == wxT("1");
 }
 
 ConfigFile::~ConfigFile()

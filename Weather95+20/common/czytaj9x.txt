@@ -1,8 +1,7 @@
-Pogoda 95+20 (Weather 95+20) 1.0
+Pogoda 95+20 (Weather 95+20) 2.0
 Autor: PeCeT_full
-Strona WWW: http://www.komputermania.pl.eu.org/pl
-Copyright © by PeCeT_full 2015. Program Pogoda 95+20 jest publikowany na zasadach licencji MIT. Wiêcej informacji mo¿na uzyskaæ zapoznaj¹c siê z plikiem Licence.txt do³¹czonym do aplikacji (polskie t³umaczenie licencji MIT: http://blaszyk-jarosinski.pl/wp-content/uploads/2008/05/licencja-mit-tlumaczenie.pdf).
-Ten produkt zawiera oprogramowanie rozwijane przez OpenSSL Project do u¿ytku w narzêdziach OpenSSL Toolkit (http://www.openssl.org/).
+Strona WWW: http://www.pecetfull.pl/pl
+Copyright © by PeCeT_full 2015-2026. Program Pogoda 95+20 jest publikowany na zasadach licencji MIT. Wiêcej informacji mo¿na uzyskaæ zapoznaj¹c siê z plikiem Licence.txt do³¹czonym do aplikacji (polskie t³umaczenie licencji MIT: http://blaszyk-jarosinski.pl/wp-content/uploads/2008/05/licencja-mit-tlumaczenie.pdf).
 
 W razie wszelkich problemów czy te¿ w¹tpliwoœci proszê o kontakt.
 
@@ -10,7 +9,7 @@ W razie wszelkich problemów czy te¿ w¹tpliwoœci proszê o kontakt.
 Opis programu
 -------------
 
-Pogoda 95+20 jest programem do prognozy pogody zaprojektowanym zarówno dla zabytkowych jak i nowoczesnych stacji roboczych PC, który korzysta z mechanizmu Yahoo Weather API do pozyskiwania szczegó³ów pogody z po³o¿enia ¿¹danego przez u¿ytkownika. Zosta³ on napisany w jêzyku C++ i korzysta z biblioteki graficznego interfejsu u¿ytkownika wxWidgets. Program ten zosta³ stworzony w celu uczczenia 20. rocznicy systemu Windows 95!
+Pogoda 95+20 jest programem do prognozy pogody zaprojektowanym zarówno dla zabytkowych jak i nowoczesnych stacji roboczych PC, który korzysta z mechanizmu API WeatherAPI.com do pozyskiwania szczegó³ów pogody z po³o¿enia ¿¹danego przez u¿ytkownika. Zosta³ on napisany w jêzyku C++ i korzysta z biblioteki graficznego interfejsu u¿ytkownika wxWidgets. Program ten zosta³ stworzony w celu uczczenia 20. rocznicy systemu Windows 95!
 
 Minimalne wymagania sprzêtowe i systemowe: procesor o mocy 133 MHz lub szybszy; 16 MB dostêpnej pamiêci RAM; 3 MB dostêpnego wolnego miejsca na dysku, w którym znajduje siê program; system operacyjny Windows 95 lub nowszy; aktywne po³¹czenie z Internetem.
 
@@ -24,7 +23,7 @@ Aby oprogramowanie mog³o prawid³owo dzia³aæ na Twoim komputerze z systemem Windo
 Obs³uga programu
 ----------------
 
-Program wita nas oknem g³ównym, gdzie jesteœmy gotów wpisaæ jak¹kolwiek po¿¹dan¹ lokalizacjê. Je¿eli po³o¿enie albo jakiœ jego odpowiednik zostanie pomyœlnie znaleziony w bazie danych serwisu Yahoo! Weather wraz z danymi, powinniœmy otrzymaæ wszystkie wa¿ne szczegó³y o pogodzie, takie jak: temperatura, warunki, ciœnienie, prêdkoœæ wiatru i tak dalej, które mog¹ byæ zapisane jako zwyk³y plik tekstowy b¹dŸ te¿ zawartoœæ Schowka do odwo³ywania siê w przysz³oœci.
+Program wita nas oknem g³ównym, gdzie jesteœmy gotów wpisaæ jak¹kolwiek po¿¹dan¹ lokalizacjê. Je¿eli po³o¿enie albo jakiœ jego odpowiednik zostanie pomyœlnie znaleziony w bazie danych serwisu WeatherAPI.com wraz z danymi, powinniœmy otrzymaæ wszystkie wa¿ne szczegó³y o pogodzie, takie jak: temperatura, warunki, ciœnienie, prêdkoœæ wiatru i tak dalej, które mog¹ byæ zapisane jako zwyk³y plik tekstowy b¹dŸ te¿ zawartoœæ Schowka do odwo³ywania siê w przysz³oœci.
 
 Uwaga: W systemach operacyjnych z rodziny Windows 9x mo¿na doœwiadczyæ problemów z kopiowaniem i wklejaniem szczegó³ów zachowanych w Schowku – tak jest, poniewa¿ funkcja zapisuje je w formacie, który jest kompatybilny tylko z programami posiadaj¹cymi klarowne wsparcie standardu Unicode. Jedyne obejœcie to zapisanie ich jako plik ANSI.
 
@@ -34,7 +33,7 @@ Opcje programu
 
 Program Pogoda 95+20 pozwala nam na dostosowanie nastêpuj¹cych ustawieñ: 
 
-* Jednostka temperatury – obs³ugiwana jest zarówno jednostka w Celsjuszach jak i Fahrenheitach. Opcja ta zmienia równie¿ jednostki odleg³oœci (km lub mi), ciœnienia (hPa lub in) oraz prêdkoœci wiatru (km/h lub mph) w zale¿noœci od wybranej opcji.
+* Jednostki miary – obs³ugiwane s¹ zarówno jednostki imperialne, jak i metryczne. Opcja ta zmienia jednostki temperatury (stopnie Celsjusza lub Fahrenheita), ciœnienia (hPa lub in), opadów (mm lub in), odleg³oœci (km lub mi) oraz prêdkoœci wiatru (km/h lub mph) w zale¿noœci od wybranej opcji.
 
 * Format czasu – mo¿emy ustawiæ zegar, by by³ formatu 12-godzinnego (AM/PM) lub 24-godzinnego.
 
@@ -45,3 +44,9 @@ Program Pogoda 95+20 pozwala nam na dostosowanie nastêpuj¹cych ustawieñ:
 * Jêzyk – mo¿na prze³¹czyæ z obecnego jêzyka interfejsu na jeden z po¿¹danych.
 
 Upewnij siê, ¿e zapisa³eœ nowe ustawienia przed zakoñczeniem dzia³ania aplikacji, je¿eli nie chcesz ich straciæ.
+
+--------------
+Znane problemy
+--------------
+
+WeatherAPI.com ma problemy z odnajdywaniem niektórych miejscowoœci po wpisaniu ich prawid³owej nazwy ze znakami diakrytycznymi, np. £ódŸ. W takim wypadku nale¿y spróbowaæ nazwy bez diakrytyków – w przypadku £odzi bêdzie to „Lodz”.
