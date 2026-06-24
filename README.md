@@ -47,3 +47,7 @@ Additional info: The post-build script for Release contains the line that launch
 Weather 95+20 is published under The MIT License. Please refer to the LICENSE.txt file of this repository for more information regarding it.
 
 This program also includes libraries and source codes that are necessary to successfully compile and launch the software. The licensing information regarding those are located in the Licenses directory.
+
+### Screenshots ###
+
+<img width="612" height="567" alt="The main window of Weather 95+20" src="https://github.com/user-attachments/assets/b2dd3c74-6f9e-4aab-ab74-0d335a19b671" />
